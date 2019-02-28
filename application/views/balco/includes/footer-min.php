@@ -10,7 +10,7 @@
     <script src="<?php echo base_url();?>piadmin/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
      <script src="<?php echo base_url();?>piadmin/js/lib/sweetalert/sweetalert.min.js"></script>
     <!-- scripit init-->
-    <script src="<?php echo base_url();?>piadmin/js/lib/sweetalert/sweetalert.init.js"></script>
+    <!--<script src="<?php echo base_url();?>piadmin/js/lib/sweetalert/sweetalert.init.js"></script>-->
     <!-- Amchart -->
     <script src="<?php echo base_url();?>piadmin/js/amcharts.js"></script>
     <script src="<?php echo base_url();?>piadmin/js/lib/chart-amchart/serial.js"></script>
@@ -36,3 +36,4 @@
     <script src="<?php echo base_url();?>piadmin/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="<?php echo base_url();?>piadmin/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
     <script src="<?php echo base_url();?>piadmin/js/lib/datatables/datatables-init.js"></script>
+    <script src="<?php echo base_url();?>piadmin/js/app.js" type="text/javascript"></script>

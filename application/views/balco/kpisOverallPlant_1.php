@@ -411,94 +411,34 @@
 
 <!-- Chart code -->
 <script>
-         var rankingElements=[];
-        var batch = {
-                        "database": {
-                            "Method": "GET",
-                            "Resource": baseServiceUrl + "elements?path=\\\\" + afServerName + "\\" + afDatabaseName + "\\KPIS\\OverallPlant\\PLF&selectedFields=WebId;Links.Elements"
-                        },
-                        "elements": {
-                            "Method": "GET",
-                            "Resource": "{0}?templateName=KPIS&selectedFields=Items.Name;Items.Path;&searchFullHierarchy=true",
-                            "ParentIds": [
-                                "database"
-                            ],
-                            "Parameters": [
-                                "$.database.Content.Links.Elements"
-                            ]
-                        },
-                        "attributes": {
-                            "Method": "GET",
-                            "RequestTemplate": {
-                                "Resource": baseServiceUrl + "attributes/multiple?selectedFields=Items.Object.Name;Items.Object.Path;Items.Object.WebId&path={0}|ACT&path={0}|BP"
-                            },
-                            "ParentIds": [
-                                "elements"
-                            ],
-                            "Parameters": [
-                                "$.elements.Content.Items[*].Path"
-                            ]
-                        },
-                        "values": {
-                            "Method": "GET",
-                            "RequestTemplate": {
-                                "Resource": baseServiceUrl + "streams/{0}/value"
-                            },
-                            "ParentIds": [
-                                "attributes"
-                            ],
-                            "Parameters": [
-                                "$.attributes.Content.Items[*].Content.Items[*].Object.WebId"
-                            ]
-                        }
-                    };
-       
-        var batchStr = JSON.stringify(batch, null, 2)
-        var batchResult = processJsonContent(baseServiceUrl + "batch", 'POST', batchStr);
-        $.when(batchResult).fail(function () {
-            warningmsg("Cannot Launch Batch!!!");
-        });
-         $.when(batchResult).done(function () {
-        var batchResultItems = (batchResult.responseJSON.attributes.Content.Items);
-        let valuesID = 0;
-        $.each(batchResultItems, function (elementID) {
-            var attrItems = batchResultItems[elementID].Content.Items;
-            var elementName = batchResult.responseJSON.elements.Content.Items[elementID].Name;
-            var elementItems = [];
-            elementItems[0]=({"mw":elementName});
-            attrItems.forEach(function (attr, attrID) {
-                    //var ValueItems=[];
-                let attrValue = "-"
-                if (attr != undefined && attr.Object != undefined) {
-                    attrName = attr.Object.Name;
-                    const getNestedObject = (nestedObj, pathArr) => {
-                        return pathArr.reduce((obj, key) =>
-                            (obj && obj[key] != undefined) ? obj[key] : undefined, nestedObj);
-                    }
-                    if (batchResult.responseJSON.values.Content.Items != undefined &&
-                        (batchResult.responseJSON.values.Content.Status == undefined || batchResult.responseJSON.values.Content.Status < 400) &&
-                        batchResult.responseJSON.values.Content.Items[valuesID].Status == 200) {
-                        var attrV = getNestedObject(batchResult.responseJSON.values,
-                            ['Content', 'Items', valuesID, 'Content', 'Value'])
-                        if (attrV !== "" && !isNaN(attrV)) {
-                            attrValue = (Math.round((attrV) * 100) / 100);                            
-                        }
-                    }
-                }
-                 elementItems[attrID + 1]=({[attrName]:attrValue});
-                valuesID++;
-            });
-            rankingElements[elementID] = elementItems;
-        });
-        //console.log(rankingElements); 
-        var cols=[];
-       $.each(rankingElements, function (key1) {
-   cols.push({ mw: rankingElements[key1][0].mw,bp:rankingElements[key1][2].BP,act:rankingElements[key1][1].ACT });
-});
-           
-//console.log(cols);
+    var url = baseServiceUrl + 'assetdatabases?path=\\\\' + afServerName + '\\' + afDatabaseName;
+    var ajaxEF = processJsonContent(url, 'GET', null);
+    $.when(ajaxEF).fail(function () {
+        warningmsg("Cannot Find the WebId.");
+    });
+    $.when(ajaxEF).done(function () {
+        var WebId = (ajaxEF.responseJSON.WebId);
 
-      var chart = AmCharts.makeChart("plantloadfactor", {
+        /****TEMPLATE ELEMENT SEARCH BY TEMPLATE NAME START****/
+        var url = baseServiceUrl + 'assetdatabases/' + WebId + '/elements?templateName=' + masterTemplateName + '&searchFullHierarchy=true';
+        var elementList = processJsonContent(url, 'GET', null);
+        $.when(elementList).fail(function () {
+            warningmsg("Cannot Find the Element Templates.");
+        });
+        $.when(elementList).done(function () {
+            var elementListItems = (elementList.responseJSON.Items);
+            var sr = 1;
+            $.each(elementListItems, function (key) {
+                    console.log(elementListItems[key].Name);
+                //$("#elementList").append("<option  data-name=" + elementListItems[key].Name + " value=" + elementListItems[key].WebId + ">" + elementListItems[key].Name + "</option>");
+                sr++;
+            });
+        });
+        /****TEMPLATE ELEMENT SEARCH BY TEMPLATE NAME END****/
+    });
+    
+   
+var chart = AmCharts.makeChart("plantloadfactor", {
         "type": "serial",
         "theme": "light",
         "categoryField": "mw",
@@ -578,129 +518,41 @@
               //"color": "#FFFFFF"
             },
 	"titles": [],
-	"dataProvider": cols,
+	"dataProvider": [
+                {
+                        "mw": 'CPP 540',
+                        "bp": 100.0,
+                        "act": 95.0
+                },
+                {
+                        "mw": 'CPP 600',
+                        "bp": 100.0,
+                        "act": 82.8
+                },
+                {
+                        "mw": 'IPP 600',
+                        "bp": 100.0,
+                        "act": 93.9
+                },
+                {
+                        "mw": 'CPP 1140',
+                        "bp": 100.0,
+                        "act": 75.1
+                },
+                {
+                        "mw": 'TPP 1200',
+                        "bp": 100.0,
+                        "act": 65
+                },
+                       {
+                        "mw": 'TPP 1740',
+                        "bp": 100.0,
+                        "act": 85
+                }],
     "export": {
     	"enabled": true
      }
 });
-    });
-
-   
-//var chart = AmCharts.makeChart("plantloadfactor", {
-//        "type": "serial",
-//        "theme": "light",
-//        "categoryField": "mw",
-//        //"rotate": true,
-//        "startEffect": "elastic",
-//        "startDuration": 1,
-//        "categoryAxis": {
-//	"gridPosition": "start",
-//	"position": "left",
-//           "labelRotation": 90,
-//           "fontSize": 11
-//	},
-//        "trendLines": [],
-//        "graphs": [{
-//            "balloonText": "BP:[[value]]",
-//            "fillAlphas": 0.8,
-//            "id": "AmGraph-1",
-//            "lineAlpha": 0.2,
-//            "title": "BP",
-//            "type": "column",
-//            "color":"skyblue",
-//            "valueField": "bp",
-//            "fixedColumnWidth": 14
-//            },
-//	{
-//            "balloonText": "ACT:[[value]]",
-//            "fillAlphas": 0.8,
-//            "id": "AmGraph-2",
-//            "lineAlpha": 0.2,
-//            "title": "ACT",
-//            "type": "column",
-//            "color":"orange",
-//            "valueField": "act",
-//            "fixedColumnWidth": 14
-//            }],
-//	"guides": [],
-//	"valueAxes": [
-//           {
-//            "id": "ValueAxis-1",
-//            "position": "bottom",
-//            "axisAlpha": 1,
-//        //            "minimum": 40,
-//        //            "maximum": 120,
-//            "titleFontSize":14,
-//            "fontSize":11, 
-//            "title": "PLF in (%)"
-//           }],
-//        "plotAreaFillAlphas": 0.1,
-//        "depth3D":0,
-//        "angle": 10,
-//	"allLabels": [],
-//	"balloon": {
-//            "drop":true,
-//            "cornerRadius": 5,
-//            "adjustBorderColor": false,
-//            "color": "#ffffff",
-//            "fixedPosition": true,
-//            "fontSize": 10
-//            },   
-//            "chartCursor": {
-//            "pan": true,
-//            "valueLineEnabled": true,
-//            "valueLineBalloonEnabled": true,
-//            "cursorAlpha": 0.05,
-//            "valueLineAlpha": 0.2,
-//            "fullWidth":true,
-//            "valueBalloonsEnabled":false,
-//            "categoryBalloonEnabled":false
-//
-//          },  
-//            "legend": {
-//              "useGraphSettings": true,
-//              "position": "bottom",
-//              "bulletType": "round",
-//              "equalWidths": false,
-//              "valueWidth": 50,
-//              //"color": "#FFFFFF"
-//            },
-//	"titles": [],
-//	"dataProvider": [
-//                {
-//                        "mw": 'CPP 540',
-//                        "bp": 100.0,
-//                        "act": 95.0
-//                },
-//                {
-//                        "mw": 'CPP 600',
-//                        "bp": 100.0,
-//                        "act": 82.8
-//                },
-//                {
-//                        "mw": 'IPP 600',
-//                        "bp": 100.0,
-//                        "act": 93.9
-//                },
-//                {
-//                        "mw": 'CPP 1140',
-//                        "bp": 100.0,
-//                        "act": 75.1
-//                },
-//                {
-//                        "mw": 'TPP 1200',
-//                        "bp": 100.0,
-//                        "act": 65
-//                },
-//                       {
-//                        "mw": 'TPP 1740',
-//                        "bp": 100.0,
-//                        "act": 85
-//                }],
-//    "export": {
-//    	"enabled": true
-//     }
-//});
 
 var chart = AmCharts.makeChart("plantAvailabilityfactor", {
         "type": "serial",

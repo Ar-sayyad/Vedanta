@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url();?>piadmin/images/logo.png">
-    <title>Balco Power | <?php echo $titlebar;?></title>
+    <title>Vedanta | <?php echo $titlebar;?></title>
     <link href="<?php echo base_url();?>piadmin/css/lib/amchart/export.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url();?>piadmin/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">

@@ -18,14 +18,12 @@ class kpis extends CI_Controller {
          
     }
     
-	public function index()
-	{
+        public function index(){
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "KPIs >> Overall Plant";
             $data['icons'] = "bubble_chart";
             $this->load->view('balco/kpisOverallPlant',$data);		
-               
-	}
+        }
         
         public function overallPlant(){
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> Overall Plant";
