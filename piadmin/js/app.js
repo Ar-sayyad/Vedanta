@@ -299,3 +299,102 @@ var kpisOverallPlant = [
                         "fixedColumnWidth": 14
                     }]
 }];
+
+var performanceUnits = [
+            {
+                "afname": "ULF", //PI AF ELEMENT
+                "div": "unitloadfactor", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit Load Factor (ULF)",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
+            },
+            {
+                "afname": "UAF", //PI AF ELEMENT
+                "div": "unitAvailabilityfactor", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit Availability Factor (UAF)",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
+            },
+            {
+                "afname": "GrossGenerationMU", //PI AF ELEMENT
+                "div": "grossgeneration", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Gross Generation in MU",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "balloonText": "Gross:<br>[[value]]"             
+            },
+            {
+                "afname": "NetGenerationMU", //PI AF ELEMENT
+                "div": "netgeneration", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Net Generation in MU",
+                "theme": "none",
+                "type":"serial",//type of chart
+                "balloonText": "Net:<br>[[value]]"             
+            },
+            {
+                "afname": "AuxConsumptionMU", //PI AF ELEMENT
+                "div": "auxconsumption", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Aux Consumption in MU",
+                "theme": "none",
+                "type":"serial",//type of chart
+                "balloonText": "Aux:<br>[[value]]"             
+            },
+            {
+                "afname": "BoilerEFF_IO", //PI AF ELEMENT
+                "div": "boilereffio", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler EFF(IO Method)",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
+            },
+            {
+                "afname": "BoilerEFF_HL", //PI AF ELEMENT
+                "div": "boilereffhl", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler EFF(HL Method)",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
+            },
+            {
+                "afname": "Heatrate", //PI AF ELEMENT
+                "div": "heatrate", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Heatrate in kcal/kWh",
+                "theme": "none",
+                "type":"serial",//type of chart
+                "balloonText": "HeatRate:<br>[[value]]"             
+            },
+            {
+                "afname": "SCC", //PI AF ELEMENT
+                "div": "scc", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "SCC in gm/kWh",
+                "theme": "none",
+                "type":"serial",//type of chart
+                "balloonText": "SCC:<br>[[value]]"             
+            },
+            {
+                "afname": "CoalConsumptionMT", //PI AF ELEMENT
+                "div": "coalconsumption", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Coal Consumption in MT",
+                "theme": "none",
+                "type":"serial",//type of chart
+                "balloonText": "Coal:<br>[[value]]"             
+            },
+            {
+                "afname": "UnitOverallEFF", //PI AF ELEMENT
+                "div": "unitoverall", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit Overall EFF",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
+            },
+            {
+                "afname": "TurbineEfficiency", //PI AF ELEMENT
+                "div": "turbine", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Turbine Efficiency",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
+            }            
+];
