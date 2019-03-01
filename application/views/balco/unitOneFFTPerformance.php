@@ -1,28 +1,4 @@
 <?php include('includes/header-top.php');?>
-<style>
-#unitloadfactor,#unitAvailabilityfactor,#boilereffio,#boilereffhl,#grossgeneration,#netgeneration,#auxconsumption,#coalconsumption,#heatrate,#scc,#unitoverall,#turbine {
-  width: 100%;
-  height: 280px;
-}
-.center{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0px !important;
-}
-.center h4{
-    font-weight: 600;
-    color:#2e3192;
-    font-size: 18px;    
-}
-.col-lg-2, .col-lg-3, .col-lg-4, .col-12{
-    padding-right: 3px !important;
-    padding-left: 3px !important;
-}
-.mydata{
-    padding: 20px 25px 20px 25px;
-}
-
-</style>
 <body class="fix-header fix-sidebar">
    <?php include('includes/preloader.php');?>
     <!-- Main wrapper  -->
@@ -171,12 +147,12 @@
                     
                 </div>
                 
-                <div class="row">
+<!--                <div class="row">
                     <div class="col-12">
                         <div class="card mydata">
                             <div class="card-body">
-<!--                                <h4 class="card-title">Data Export</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>-->
+                                <h4 class="card-title">Data Export</h4>
+                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive">
                                     <table id="example23" class="display nowrap table table-striped  table-bordered" cellspacing="0" width="100%">
                                         <thead>
@@ -417,7 +393,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 
                 <!-- End PAge Content -->
             </div>
@@ -437,51 +413,39 @@
 <script>
 
 var chart = AmCharts.makeChart("unitloadfactor", {
-	"type": "pie",
-  "theme": "light",
-  "titles": [],
-  "dataProvider": [ {
-    "unit": "ULF",
-    "val": 95
-  }, {
-    "unit": "Losses",
-    "val": 5
-  }
-  ],
-  "balloon": {
-            "drop":true,
-            //"cornerRadius": 5,
+        "type": "pie",
+        "theme": "light",
+        "titles": [],
+        "dataProvider": [{
+            "unit": "ULF",
+            "val": 95
+        }, {
+            "unit": "Losses",
+            "val": 5
+        }],
+        "balloon": {
+            "drop": true, //"cornerRadius": 5,
             "adjustBorderColor": false,
             "color": "#ffffff",
             "fixedPosition": true,
             "fontSize": 9
-            },
-           
-//    "legend": {
-//      "useGraphSettings": false,
-//      "position": "bottom",
-//      "bulletType": "round",
-//      "equalWidths": false,
-//      "valueWidth": 30,
-//      //"color": "#FFFFFF"
-//    },
+        },
         "valueField": "val",
         "titleField": "unit",
-        "adjustBorderColor": false,
-        //"startEffect": "elastic",
-        "startDuration": 0,         
+        "adjustBorderColor": false, //"startEffect": "elastic",
+        "startDuration": 0,
         "labelsEnabled": false,
         "labelRadius": 5,
-         pullOutRadius: 60,
-         "outlineColor": "",
+        pullOutRadius: 60,
+        "outlineColor": "",
         "innerRadius": "45%",
         "depth3D": 0,
         "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>",
         "angle": 0,
-    "export": {
-      "enabled": true
-    }
-});
+        "export": {
+            "enabled": true
+        }
+    });
 
 var chart = AmCharts.makeChart("unitAvailabilityfactor", {
 	"type": "pie",

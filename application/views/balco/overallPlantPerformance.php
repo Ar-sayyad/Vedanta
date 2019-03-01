@@ -1,35 +1,4 @@
 <?php include('includes/header-top.php');?>
-<style>
-#overallPlantGeneration,#overallAuxGeneration,#overallPlantGrossEfficiency,#overallPlantGrossHeatRate,#mwFFTGeneration,#mwFFTAuxConsumption,#GrossFFTEfficiency,#fftPlantGrossHeatRate,
-#mwTWHGeneration,#mwTWHAuxConsumption,#GrossTWHEfficiency,#twhPlantGrossHeatRate{
-  width: 100%;
-  height: 250px;
-}
-.center{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0px !important;
-}
-.center h4{
-    font-weight: 600;
-    color:#2e3192;
-    font-size: 18px;
-}
-.col-lg-2, .col-lg-3, .col-lg-4, .col-12,.col-lg-12{
-    padding-right: 3px !important;
-    padding-left: 3px !important;
-}
-.mydata{
-    padding: 20px 25px 20px 25px;
-}
-.headd{
-       background-color: #0288c5;
-    text-align: center;
-    padding-top: 10px;
-    margin-top: 20px;
-    box-shadow: 0 5px 10px #6c757d;
-}
-</style>
 <body class="fix-header fix-sidebar">
    <?php include('includes/preloader.php');?>
     <!-- Main wrapper  -->
@@ -195,12 +164,12 @@
                     
                 </div>
                 
-                <div class="row">
+<!--                <div class="row">
                     <div class="col-12">
                         <div class="card mydata">
                             <div class="card-body">
-<!--                                <h4 class="card-title">Data Export</h4>
-                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>-->
+                                <h4 class="card-title">Data Export</h4>
+                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
                                 <div class="table-responsive">
                                     <table id="example23" class="display nowrap table table-striped  table-bordered" cellspacing="0" width="100%">
                                         <thead>
@@ -347,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 
                 <!-- End PAge Content -->
             </div>

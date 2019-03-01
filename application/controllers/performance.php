@@ -7,7 +7,7 @@ class performance extends CI_Controller {
         parent::__construct();
         $this->load->database();        	
         $this->load->library('session');
-	$this->load->library('form_validation');
+        $this->load->library('form_validation');
         $this->load->model('balco_model');
         $this->balco_model->is_logged_in(); 
         $this->load->helper('file');
@@ -18,13 +18,12 @@ class performance extends CI_Controller {
          
     }
     
-	public function index()
-	{
-           $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> Overall Plant";
+        public function index(){
+            $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "Performance >> Overall Plant";
             $data['icons'] = "bubble_chart";
             $this->load->view('balco/overallPlantPerformance',$data);               
-	} 
+        } 
         
         public function overallPlant(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> Overall Plant";
