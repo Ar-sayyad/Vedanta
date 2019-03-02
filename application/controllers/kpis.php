@@ -7,7 +7,7 @@ class kpis extends CI_Controller {
         parent::__construct();
         $this->load->database();        	
         $this->load->library('session');
-	$this->load->library('form_validation');
+        $this->load->library('form_validation');
         $this->load->model('balco_model');
         $this->balco_model->is_logged_in(); 
         $this->load->helper('file');
@@ -22,14 +22,16 @@ class kpis extends CI_Controller {
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "KPIs >> Overall Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/kpisOverallPlant',$data);		
+            $data['path'] = "OverallPlant";
+            $this->load->view('balco/kpisData',$data);		
         }
         
         public function overallPlant(){
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "KPIs >> Overall Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/kpisOverallPlant',$data);
+             $data['path'] = "OverallPlant";
+            $this->load->view('balco/kpisData',$data);
         }
         
         public function plantHead(){
@@ -43,14 +45,16 @@ class kpis extends CI_Controller {
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> COP";
             $data['titlebar'] = "KPIs >> COP";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/kpisCop',$data);
+             $data['path'] = "COP";
+            $this->load->view('balco/kpisData',$data);
         }
        
         public function copBreakup(){
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> COP Breakup";
             $data['titlebar'] = "KPIs >> COP Breakup";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/kpisCopBreakup',$data);
+             $data['path'] = "COPBreakup";
+            $this->load->view('balco/kpisData',$data);
         }
         
       

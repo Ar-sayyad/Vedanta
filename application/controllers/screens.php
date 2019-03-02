@@ -18,20 +18,20 @@ class screens extends CI_Controller {
          
     }
     
-	public function index()
-	{
+        public function index(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "Plant Screen >> Overall Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/overallPlantScreen',$data);		
-               
-	}
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);		
+           }
         
         public function overallPlant(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "Plant Screen >> Overall Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/overallPlantScreen',$data);
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);	
         }
         
          /******540MW Unit #1***********/
@@ -40,35 +40,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onefftBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Boiler.bmp";
+            $this->load->view('balco/Screen',$data);          
         }
         
          public function onefftTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onefftTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Turbine.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function onefftCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onefftCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Condenser.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
         
         public function onefftHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onefftHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Heaters.bmp";
+            $this->load->view('balco/Screen',$data);        
         }
         
          public function onefftPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onefftPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         /******540MW Unit #2***********/
@@ -77,35 +82,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #2 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twofftBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Boiler.bmp";
+            $this->load->view('balco/Screen',$data);             
         }
         
          public function twofftTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #2 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twofftTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Turbine.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function twofftCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #2 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twofftCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Condenser.bmp";
+            $this->load->view('balco/Screen',$data);         
         }
         
         public function twofftHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #2 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twofftHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Heaters.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
         
          public function twofftPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #2 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twofftPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
        
         /******540MW Unit #3***********/
@@ -114,35 +124,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #3 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threefftBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);         
         }
         
          public function threefftTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #3 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threefftTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function threefftCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #3 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threefftCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);        
         }
         
         public function threefftHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #3 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threefftHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);       
         }
         
          public function threefftPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #3 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threefftPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);     
         }
         
          /******540MW Unit #4***********/
@@ -151,35 +166,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #4 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourfftBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);        
         }
         
          public function fourfftTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #4 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourfftTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function fourfftCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #4 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourfftCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function fourfftHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #4 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourfftHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);         
         }
         
          public function fourfftPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #4 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourfftPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
       
         
@@ -192,35 +212,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #1 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onetwhBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);         
         }
         
          public function onetwhTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onetwhTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
         
         public function onetwhCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onetwhCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function onetwhHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #1 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onetwhHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
          public function onetwhPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #1 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/onetwhPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
         
         /******540MW Unit #2***********/
@@ -229,35 +254,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #2 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twotwhBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);          
         }
         
          public function twotwhTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #2 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twotwhTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function twotwhCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #2 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twotwhCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function twotwhHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #2 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twotwhHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
          public function twotwhPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #2 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #2 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/twotwhPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
        
         /******540MW Unit #3***********/
@@ -266,35 +296,40 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #3 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threetwhBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
          public function threetwhTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #3 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threetwhTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function threetwhCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #3 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threetwhCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function threetwhHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #3 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threetwhHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
          public function threetwhPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #3 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/threetwhPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
         
          /******540MW Unit #4***********/
@@ -303,34 +338,39 @@ class screens extends CI_Controller {
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Plant Screen >> 540 MW > Unit #4 > Boiler";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourtwhBoilerScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
          public function fourtwhTurbine(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #4 > Turbine";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourtwhTurbineScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);        
         }
         
         public function fourtwhCondenser(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Condenser";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #4 > Condenser";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourfftCondenserScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);            
         }
         
         public function fourtwhHeater(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Heater";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #4 > Heater";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourtwhHeaterScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
         
          public function fourtwhPerformance(){
             $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #4 <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #4 > Performance";
             $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/fourtwhPerformanceScreen',$data);            
+            $data['path'] = "piadmin/images/screens/Overview.bmp";
+            $this->load->view('balco/Screen',$data);           
         }
 }

@@ -307,6 +307,7 @@ var performanceUnits = [
                 "title": "Unit Load Factor (ULF)",
                 "theme": "light",
                 "type":"pie",//type of chart
+                "path":"path={0}|ULF&path={0}|Losses",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
             },
             {
@@ -315,6 +316,7 @@ var performanceUnits = [
                 "title": "Unit Availability Factor (UAF)",
                 "theme": "light",
                 "type":"pie",//type of chart
+                "path":"path={0}|UAF&path={0}|Losses",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
             },
             {
@@ -323,6 +325,7 @@ var performanceUnits = [
                 "title": "Gross Generation in MU",
                 "theme": "light",
                 "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
                 "balloonText": "Gross:<br>[[value]]"             
             },
             {
@@ -331,6 +334,7 @@ var performanceUnits = [
                 "title": "Net Generation in MU",
                 "theme": "none",
                 "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
                 "balloonText": "Net:<br>[[value]]"             
             },
             {
@@ -339,6 +343,7 @@ var performanceUnits = [
                 "title": "Aux Consumption in MU",
                 "theme": "none",
                 "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
                 "balloonText": "Aux:<br>[[value]]"             
             },
             {
@@ -347,6 +352,7 @@ var performanceUnits = [
                 "title": "Boiler EFF(IO Method)",
                 "theme": "light",
                 "type":"pie",//type of chart
+                "path":"path={0}|IO&path={0}|Losses",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
             },
             {
@@ -355,6 +361,7 @@ var performanceUnits = [
                 "title": "Boiler EFF(HL Method)",
                 "theme": "light",
                 "type":"pie",//type of chart
+                "path":"path={0}|HL&path={0}|Losses",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
             },
             {
@@ -363,6 +370,7 @@ var performanceUnits = [
                 "title": "Heatrate in kcal/kWh",
                 "theme": "none",
                 "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
                 "balloonText": "HeatRate:<br>[[value]]"             
             },
             {
@@ -371,6 +379,7 @@ var performanceUnits = [
                 "title": "SCC in gm/kWh",
                 "theme": "none",
                 "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
                 "balloonText": "SCC:<br>[[value]]"             
             },
             {
@@ -379,6 +388,7 @@ var performanceUnits = [
                 "title": "Coal Consumption in MT",
                 "theme": "none",
                 "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
                 "balloonText": "Coal:<br>[[value]]"             
             },
             {
@@ -387,6 +397,7 @@ var performanceUnits = [
                 "title": "Unit Overall EFF",
                 "theme": "light",
                 "type":"pie",//type of chart
+                "path":"path={0}|Overall_EFF&path={0}|Losses",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
             },
             {
@@ -395,6 +406,7 @@ var performanceUnits = [
                 "title": "Turbine Efficiency",
                 "theme": "light",
                 "type":"pie",//type of chart
+                "path":"path={0}|Turbine&path={0}|Losses",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
             }            
 ];

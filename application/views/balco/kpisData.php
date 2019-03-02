@@ -35,7 +35,10 @@
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
 <!-- Chart code -->
-     <script src="<?php echo base_url();?>piadmin/js/overallPlantKpis.js" type="text/javascript"></script>
+<script>
+        var elementName="<?php echo $path;?>";
+</script>
+     <script src="<?php echo base_url();?>piadmin/js/PlantKpis.js" type="text/javascript"></script>
 <!-- Chart code -->
 </body>
 </html>

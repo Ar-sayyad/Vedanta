@@ -57,4 +57,10 @@
   width: 100%;
   height: 280px;
 }
+#frame{
+        width: 100%;
+        height: 800px;
+        padding: 10px;
+        text-align: center;
+    }
 </style>

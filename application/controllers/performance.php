@@ -37,36 +37,41 @@ class performance extends CI_Controller {
         public function unitOnefft(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1";
             $data['titlebar'] = "Performance >> 540 MW > Unit #1";
-            $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/unitOneFFTPerformance',$data);
+            $data['icons'] = "bubble_chart";   
+            $data['path'] = "PERFORMANCE\\\\540MW\\\Unit1";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function unitTwofft(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2";
             $data['titlebar'] = "Performance >> 540 MW > Unit #2";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitTwoFFTPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\540MW\\\Unit2";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function unitThreefft(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3";
             $data['titlebar'] = "Performance >> 540 MW > Unit #3";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitThreeFFTPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\540MW\\\Unit3";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function unitFourfft(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4";
             $data['titlebar'] = "Performance >> 540 MW > Unit #4";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitFourFFTPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\540MW\\\Unit4";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function bopDcsfft(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Balance of Plant";
             $data['titlebar'] = "Performance >> 540 MW > Balance of Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/bopDcsFFTPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\540MW\\\BOP";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function boilerfft(){
@@ -90,36 +95,41 @@ class performance extends CI_Controller {
          public function unitOnetwh(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #1";
             $data['titlebar'] = "Performance >> 1200 MW > Unit #1";
-            $data['icons'] = "bubble_chart";            
-            $this->load->view('balco/unitOneTWHPerformance',$data);
+            $data['icons'] = "bubble_chart";    
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\Unit1";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function unitTwotwh(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #2";
             $data['titlebar'] = "Performance >> 1200 MW > Unit #2";
-            $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitTwoTWHPerformance',$data);
+            $data['icons'] = "bubble_chart"; 
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\Unit2";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function unitThreetwh(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3";
             $data['titlebar'] = "Performance >> 1200 MW > Unit #3";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitThreeTWHPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\Unit3";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function unitFourtwh(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #4";
             $data['titlebar'] = "Performance >> 1200 MW > Unit #4";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitFourTWHPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\Unit4";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function bopDcstwh(){
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Balance of Plant";
             $data['titlebar'] = "Performance >> 1200 MW > Balance of Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/bopDcsTWHPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\BOP";
+            $this->load->view('balco/unitPerformance',$data);
         }
         
          public function boilertwh(){

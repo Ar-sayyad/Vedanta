@@ -18,103 +18,103 @@ class reports extends CI_Controller {
          
     }
     
-	public function index()
-	{
+        public function index(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "Reports >> Overall Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/overallPlantReport',$data);		
-               
-	}
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 		
+           }
         
         public function overallPlant(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Overall Plant";
             $data['titlebar'] = "Reports >> Overall Plant";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/overallPlantReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
         }
         
         /********540 MW *******/
         
-         public function unitonefft()
-	{
+         public function unitonefft(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1";
             $data['titlebar'] = "Reports >> 540 MW > Unit #1";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitOneFFTReport',$data);
+           $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}     
        
-         public function unittwofft()
-	{
+         public function unittwofft(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2";
             $data['titlebar'] = "Reports >> 540 MW > Unit #2";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitTwoFFTReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}     
         
-         public function unitthreefft()
-	{
+         public function unitthreefft(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #3";
             $data['titlebar'] = "Reports >> 540 MW > Unit #3";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitThreeFFTReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}  
         
-         public function unitfourfft()
-	{
+         public function unitfourfft(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #4";
             $data['titlebar'] = "Reports >> 540 MW > Unit #4";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitFourFFTReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); ;
 	}   
         
-        public function performancefft()
-	{
+        public function performancefft(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Reports >> 540 MW > Performance";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/performanceFFTReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}     
         
         /***********1200 MW************/
       
-         public function unitonetwh()
-	{
+         public function unitonetwh(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #1";
             $data['titlebar'] = "Reports >> 1200 MW > Unit #1";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitOneTWHReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}   
         
-        public function unittwotwh()
-	{
+        public function unittwotwh(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #2";
             $data['titlebar'] = "Reports >> 1200 MW > Unit #2";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitTwoTWHReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}  
         
-         public function unitthreetwh()
-	{
+         public function unitthreetwh(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #3";
             $data['titlebar'] = "Reports >> 1200 MW > Unit #3";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitThreeTWHReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}  
         
-         public function unitfourtwh()
-	{
+         public function unitfourtwh(){
             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #4";
             $data['titlebar'] = "Reports >> 1200 MW > Unit #4";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/unitFourTWHReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}  
         
-        public function performancetwh()
-	{
-             $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Performance";
+        public function performancetwh(){
+            $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Performance";
             $data['titlebar'] = "Reports >> 1200 MW > Performance";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/performanceTWHReport',$data);
+            $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+            $this->load->view('balco/Report',$data); 
 	}  
 }

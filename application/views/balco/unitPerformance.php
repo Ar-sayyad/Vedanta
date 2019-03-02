@@ -1,9 +1,4 @@
 <?php include('includes/header-top.php');?>
-<style>
-    iframe{
-        height: 700px;
-    }
-</style>
 <body class="fix-header fix-sidebar">
    <?php include('includes/preloader.php');?>
     <!-- Main wrapper  -->
@@ -25,32 +20,7 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-
-                <div class="row">                   
-                    <div class="col-lg-12">
-                        <div class="card">
-<!--                            <div class="card-title center">
-                                <h4>PI CORESIGHT</h4>
-                            </div>-->
-                            <div class="card-body">
-
-                              
-                               <div id="mydiv">
-     <iframe id="frame" src="http://59.144.10.120/Coresight/PB/#/PBDisplays/396"  width="100%" height="300">
-     </iframe>
- </div>
- <button id="button">Load</button>
- 
-
-                               
-                            </div>
-                        </div>
-                    </div>
-                  
-                </div>
-                
-               
-                
+                <?php include('includes/performanceUnitChartDiv.php');?>                            
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->
@@ -64,15 +34,12 @@
     <!-- All Jquery -->
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
- <script>
- $(document).ready(function(){
-$("#button").click(function () { 
-    $url= "http://59.144.10.120/Coresight/PB/#/PBDisplays/396";
-    alert($url);
-   
-    $("#frame").attr("src", $url);
-});
-});
+
+<!-- Chart code -->
+<script>
+         var elementName = "<?php echo $path;?>";
 </script>
+<script src="<?php echo base_url();?>piadmin/js/unitPerformance.js" type="text/javascript"></script>
+<!-- Chart code -->
 </body>
 </html>

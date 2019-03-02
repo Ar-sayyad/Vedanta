@@ -1,9 +1,4 @@
 <?php include('includes/header-top.php');?>
-<style>
-    iframe{
-        height: 700px;
-    }
-</style>
 <body class="fix-header fix-sidebar">
    <?php include('includes/preloader.php');?>
     <!-- Main wrapper  -->
@@ -25,32 +20,20 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-
                 <div class="row">                   
                     <div class="col-lg-12">
                         <div class="card">
-<!--                            <div class="card-title center">
-                                <h4>PI CORESIGHT</h4>
-                            </div>-->
-                            <div class="card-body">
-
-                              
+                            <div class="card-body">                                
                                <div id="mydiv">
-     <iframe id="frame" src="http://59.144.10.120/Coresight/PB/#/PBDisplays/396"  width="100%" height="300">
-     </iframe>
- </div>
- <button id="button">Load</button>
- 
-
-                               
+                                   <h2>IMAGE (Sample Overall Plant Report)</h2>
+                                   <img src="<?php echo base_url().$path;?>" width="100%"> 
+<!--                                    <iframe id="frame" src="http://10.81.100.250:8088/ReportServer_DWH/Pages/ReportViewer.aspx?%2fReport%2fMarketingECRM&rs:Command=Render" width="100%">
+                                    </iframe>-->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                  
-                </div>
-                
-               
-                
+                    </div>                  
+                </div>                
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->
