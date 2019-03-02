@@ -141,7 +141,7 @@ var chart = AmCharts.makeChart("plantwiseFFTPerformance", {
               "position": "bottom",
               "bulletType": "round",
               "equalWidths": false,
-              "valueWidth": 30,
+              "valueWidth": 30
             },
   "dataProvider": [ {
     "unit": "Unit#1",
