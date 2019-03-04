@@ -411,32 +411,84 @@ var performanceUnits = [
             }            
 ];
 
-var performanceUnitse = [
+/****Boiler Performance****/
+var boilerPerformance = [
             {
-                "afname": "ULF", //PI AF ELEMENT
-                "div": "unitloadfactor", // DIV NAME WHERE TO DISPLAY CHART
-                "title": "Unit Load Factor (ULF)",
+                "afname": "Performance", //PI AF ELEMENT
+                "div": "plantwiseFFTPerformance", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit wise Performance",
                 "theme": "light",
                 "type":"pie",//type of chart
-                "path":"path={0}|ULF&path={0}|Losses",
+                "path":"path={0}|Unit1&path={0}|Unit2&path={0}|Unit3&path={0}|Unit4",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
             },
             {
-                "afname": "UAF", //PI AF ELEMENT
-                "div": "unitAvailabilityfactor", // DIV NAME WHERE TO DISPLAY CHART
-                "title": "Unit Availability Factor (UAF)",
+                "afname": "BoilerEfficiency1", //PI AF ELEMENT
+                "div": "boilerOneEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler #1 Efficiency",
                 "theme": "light",
                 "type":"pie",//type of chart
-                "path":"path={0}|UAF&path={0}|Losses",
+                "path":"path={0}|Efficiency&path={0}|L1&path={0}|L2&path={0}|L3",
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
             },
             {
-                "afname": "GrossGenerationMU", //PI AF ELEMENT
-                "div": "grossgeneration", // DIV NAME WHERE TO DISPLAY CHART
-                "title": "Gross Generation in MU",
+                "afname": "BoilerEfficiency2", //PI AF ELEMENT
+                "div": "boilerTwoEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler #2 Efficiency",
                 "theme": "light",
-                "type":"serial",//type of chart
-                "path":"path={0}|BP&path={0}|ACT",
-                "balloonText": "Gross:<br>[[value]]"             
+                "type":"pie",//type of chart
+                "path":"path={0}|Efficiency&path={0}|L1&path={0}|L2&path={0}|L3",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
+            },
+            {
+                "afname": "BoilerEfficiency3", //PI AF ELEMENT
+                "div": "boilerThreeEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler #3 Efficiency",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "path":"path={0}|Efficiency&path={0}|L1&path={0}|L2&path={0}|L3",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
+            },
+            {
+                "afname": "BoilerEfficiency4", //PI AF ELEMENT
+                "div": "boilerFourEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler #4 Efficiency",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "path":"path={0}|Efficiency&path={0}|L1&path={0}|L2&path={0}|L3",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
             }
 ];
+
+var allBoilerEfficiency = [
+            {
+                "afname": "AllBoilerEfficiency", //PI AF ELEMENT
+                "div": "boilerEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Boiler Efficiency",
+                "theme": "light",
+                "path":"path={0}|HL&path={0}|IO", //PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "HL<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "HL",
+                        "type": "column",
+                        "color":"skyblue",
+                        "valueField": "hl",
+                        "fixedColumnWidth": 14
+                        },
+                      {
+                        "balloonText": "IO<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "IO",
+                        "type": "column",
+                        "color":"orange",
+                        "valueField": "io",
+                        "fixedColumnWidth": 14
+                        }]
+            }
+];
+/****Boiler Performance****/

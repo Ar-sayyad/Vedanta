@@ -78,7 +78,8 @@ class performance extends CI_Controller {
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Performance >> 540 MW > Boiler";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/boilerFFTPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\540MW\\\Boiler";
+            $this->load->view('balco/boilerPerformance',$data);
         }
         
          public function turbinefft(){
@@ -136,7 +137,8 @@ class performance extends CI_Controller {
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Boiler";
             $data['titlebar'] = "Performance >> 1200 MW > Boiler";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/boilerTWHPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\Boiler";
+            $this->load->view('balco/boilerPerformance',$data);
         }
         
          public function turbinetwh(){
