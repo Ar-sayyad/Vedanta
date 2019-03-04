@@ -63,4 +63,8 @@
         padding: 10px;
         text-align: center;
     }
+    #plantwiseFFTPerformance,#boilerOneEfficiency,#boilerTwoEfficiency,#boilerEfficiency,#boilerThreeEfficiency,#boilerFourEfficiency {
+  width: 100%;
+  height: 310px;
+}
 </style>

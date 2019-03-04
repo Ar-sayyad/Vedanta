@@ -410,3 +410,33 @@ var performanceUnits = [
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
             }            
 ];
+
+var performanceUnits = [
+            {
+                "afname": "ULF", //PI AF ELEMENT
+                "div": "unitloadfactor", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit Load Factor (ULF)",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "path":"path={0}|ULF&path={0}|Losses",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
+            },
+            {
+                "afname": "UAF", //PI AF ELEMENT
+                "div": "unitAvailabilityfactor", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit Availability Factor (UAF)",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "path":"path={0}|UAF&path={0}|Losses",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
+            },
+            {
+                "afname": "GrossGenerationMU", //PI AF ELEMENT
+                "div": "grossgeneration", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Gross Generation in MU",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT",
+                "balloonText": "Gross:<br>[[value]]"             
+            }
+];
