@@ -411,7 +411,7 @@ var performanceUnits = [
             }            
 ];
 
-var performanceUnits = [
+var performanceUnitse = [
             {
                 "afname": "ULF", //PI AF ELEMENT
                 "div": "unitloadfactor", // DIV NAME WHERE TO DISPLAY CHART
