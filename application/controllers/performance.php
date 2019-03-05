@@ -86,7 +86,8 @@ class performance extends CI_Controller {
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Performance >> 540 MW > Turbine";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/turbineFFTPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\540MW\\\Turbine";
+            $this->load->view('balco/turbinePerformance',$data);
         }
         
          /***********540MW END**************/
@@ -145,7 +146,8 @@ class performance extends CI_Controller {
             $data['title'] = "Performance <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Turbine";
             $data['titlebar'] = "Performance >> 1200 MW > Turbine";
             $data['icons'] = "bubble_chart";
-            $this->load->view('balco/turbineTWHPerformance',$data);
+            $data['path'] = "PERFORMANCE\\\\1200MW\\\Turbine";
+            $this->load->view('balco/turbinePerformance',$data);
         }
         
          /***********1200MW END**************/

@@ -493,3 +493,66 @@ var allBoilerEfficiency = [
             }    
 ];
 /****Boiler Performance****/
+
+var turbinePerformance = [
+              {
+                "afname": "Performance", //PI AF ELEMENT
+                "div": "plantwiseFFTPerformance", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit wise Performance",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "path":"path={0}|Value",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
+            },
+            {
+                "afname": "SteamTurbineEffciency", //PI AF ELEMENT
+                "div": "boilerOneEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Efficiency (%)",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|value",
+                "color":"#007bff",
+                "balloonText": "Efficiency:<br>[[value]]"             
+            },
+            {
+                "afname": "CondenserEffectiveness", //PI AF ELEMENT
+                "div": "boilerTwoEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Effectiveness (%)",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|value",
+                "color":"#dc3545",
+                "balloonText": "Effect.:<br>[[value]]"             
+            },
+            {
+                "afname": "SteamTurbineHPCylinderEfficiency", //PI AF ELEMENT
+                "div": "boilerEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Efficiency (%)",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|value",
+                "color":"#ffc107",
+                "balloonText": "Efficiency.:<br>[[value]]"             
+            },
+            {
+                "afname": "SteamTurbineIPCylinderEfficiency", //PI AF ELEMENT
+                "div": "boilerThreeEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Efficiency (%)",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|value",
+                "color":"#6610f2",
+                "balloonText": "Efficiency.:<br>[[value]]"             
+            },
+            {
+                "afname": "SteamTurbineLPCylinderEfficiency", //PI AF ELEMENT
+                "div": "boilerFourEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Efficiency (%)",
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|value",
+                "color":"#0b1551",
+                "balloonText": "Efficiency.:<br>[[value]]"             
+            }
+        
+];
