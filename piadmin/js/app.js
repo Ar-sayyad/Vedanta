@@ -3,8 +3,6 @@ var user = "Asif";/***USERNAME***/
 var pass = "ECG@123";/***PASSWORD***/
 var afServerName = "ECG-DEV-SERVER";/***AF SERVER NAME***/
 var afDatabaseName = "BALCOPOWER";//Aasif_Development//"Mayhar";/***DATABASE NAME***/
-var EnumerationSets = "CONNECTED_TO_PLANT";/***ENUMERATION SET NAME***/
-var masterTemplateName = "KPIS";/***MASTER TEMPLATE NAME***/
 var enableBasicAuth=true;
 
 var processJsonContent=function(url,type,data){
@@ -30,6 +28,7 @@ var makeBasicAuth=function(user,password){
     return"Basic "+hash;
 }
 
+/****KPIS****/
 var kpisOverallPlant = [
             {
                 "afname": "PLF", //PI AF ELEMENT
@@ -299,7 +298,9 @@ var kpisOverallPlant = [
                         "fixedColumnWidth": 14
                     }]
 }];
+/****KPIS****/
 
+/****Unit Performance****/
 var performanceUnits = [
             {
                 "afname": "ULF", //PI AF ELEMENT
@@ -410,6 +411,7 @@ var performanceUnits = [
                 "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
             }            
 ];
+/****Unit Performance****/
 
 /****Boiler Performance****/
 var boilerPerformance = [
@@ -494,8 +496,9 @@ var allBoilerEfficiency = [
 ];
 /****Boiler Performance****/
 
+/****tURBINE Performance****/
 var turbinePerformance = [
-              {
+            {
                 "afname": "Performance", //PI AF ELEMENT
                 "div": "plantwiseFFTPerformance", // DIV NAME WHERE TO DISPLAY CHART
                 "title": "Unit wise Performance",
@@ -556,3 +559,4 @@ var turbinePerformance = [
             }
         
 ];
+/****tURBINE Performance****/
