@@ -414,15 +414,6 @@ var performanceUnits = [
 /****Boiler Performance****/
 var boilerPerformance = [
             {
-                "afname": "Performance", //PI AF ELEMENT
-                "div": "plantwiseFFTPerformance", // DIV NAME WHERE TO DISPLAY CHART
-                "title": "Unit wise Performance",
-                "theme": "light",
-                "type":"pie",//type of chart
-                "path":"path={0}|Unit1&path={0}|Unit2&path={0}|Unit3&path={0}|Unit4",
-                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"                
-            },
-            {
                 "afname": "BoilerEfficiency1", //PI AF ELEMENT
                 "div": "boilerOneEfficiency", // DIV NAME WHERE TO DISPLAY CHART
                 "title": "Boiler #1 Efficiency",
@@ -466,6 +457,7 @@ var allBoilerEfficiency = [
                 "div": "boilerEfficiency", // DIV NAME WHERE TO DISPLAY CHART
                 "title": "Boiler Efficiency",
                 "theme": "light",
+                "type":"serial",//type of chart
                 "path":"path={0}|HL&path={0}|IO", //PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "HL<br>[[value]]",
@@ -489,6 +481,15 @@ var allBoilerEfficiency = [
                         "valueField": "io",
                         "fixedColumnWidth": 14
                         }]
-            }
+            },
+            {
+                "afname": "Performance", //PI AF ELEMENT
+                "div": "plantwiseFFTPerformance", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Unit wise Performance",
+                "theme": "light",
+                "type":"pie",//type of chart
+                "path":"path={0}|Value",
+                "balloonText": "[[title]]<br><span style='font-size:10px'><b>[[value]]</b><br> ([[percents]]%)</span>"             
+            }    
 ];
 /****Boiler Performance****/

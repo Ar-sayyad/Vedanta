@@ -99,7 +99,7 @@ $.each(boilerPerformance, function(key) {
 
 }); ///json array    
 
-        $.each(allBoilerEfficiency, function(key) {
+$.each(allBoilerEfficiency, function(key) {
     var rankingElements = [];
     var batch = {
         "database": {
@@ -166,15 +166,16 @@ $.each(boilerPerformance, function(key) {
             rankingElements[elementID] = elementItems;
         });
         var cols = [];
-        $.each(rankingElements, function(key1) {
-                cols.push({
-                    mw: rankingElements[key1][0].mw,
-                    io: rankingElements[key1][2].IO,
-                    hl: rankingElements[key1][1].HL
-                });            
-        });
+         if (allBoilerEfficiency[key].type === 'serial') {
+                $.each(rankingElements, function(key1) {
+                        cols.push({
+                            mw: rankingElements[key1][0].mw,
+                            io: rankingElements[key1][2].IO,
+                            hl: rankingElements[key1][1].HL
+                        });            
+                });
         var chart = AmCharts.makeChart(allBoilerEfficiency[key].div, {
-            "type": "serial",
+            "type": allBoilerEfficiency[key].type,
             "theme": allBoilerEfficiency[key].theme,
             "categoryField": "mw",
             "startEffect": "elastic",
@@ -231,5 +232,41 @@ $.each(boilerPerformance, function(key) {
                 "enabled": !0
             }
         });
+         }else{
+                 $.each(rankingElements, function(key1) {
+                        cols.push({
+                            mw: rankingElements[key1][0].mw,
+                            val: rankingElements[key1][1].value
+                        });            
+                });                
+                 var chart = AmCharts.makeChart(allBoilerEfficiency[key].div, {
+                "type": allBoilerEfficiency[key].type,
+                "theme": allBoilerEfficiency[key].theme,
+                "titles": [],
+                "dataProvider": cols,
+                "balloon": {
+                    "drop": true, //"cornerRadius": 5,
+                    "adjustBorderColor": false,
+                    "color": "#ffffff",
+                    "fixedPosition": true,
+                    "fontSize": 9
+                },
+                "valueField": "val",
+                "titleField": "mw",
+                "adjustBorderColor": false, //"startEffect": "elastic",
+                "startDuration": 0,
+                "labelsEnabled": false,
+                "labelRadius": 10,
+                pullOutRadius: 60,
+                "outlineColor": "",
+                "depth3D": 0,
+                "balloonText": allBoilerEfficiency[key].balloonText,
+                "angle": 0,
+                "export": {
+                    "enabled": true
+                }
+            });
+         }
+        
     });
 });
