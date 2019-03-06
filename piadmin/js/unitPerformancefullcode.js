@@ -1,4 +1,3 @@
- var elementName = "PERFORMANCE\\540MW\\Unit1";//KPI'S Element Name
         $.each(performanceUnits, function(key) {
     var rankingElements = [];
     var batch = {

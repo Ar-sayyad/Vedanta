@@ -560,3 +560,52 @@ var turbinePerformance = [
         
 ];
 /****tURBINE Performance****/
+
+/****Plant Performance****/
+var elementPerformance=[
+            {
+                "afname": "OverallPlant", //PI AF ELEMENT          
+            },
+            {
+                "afname": "540MW", //PI AF ELEMENT       
+            },
+            {
+                "afname": "1200MW", //PI AF ELEMENT        
+            }        
+];
+var plantPerformance = [
+            {
+                "afname": "PlantGeneration", //PI AF ELEMENT
+                "div": "PlantGeneration", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Overall Plant Generation",
+                "theme": "light",
+                "type":"gauge",//type of chart
+                "path":"path={0}|color&path={0}|StartValue&path={0}|endValue"           
+            },
+           {
+                "afname": "AuxGeneration", //PI AF ELEMENT
+                "div": "AuxConsumption", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Overall Aux Generation",
+                "theme": "light",
+                "type":"gauge",//type of chart
+                "path":"path={0}|color&path={0}|StartValue&path={0}|endValue"            
+            },
+            {
+                "afname": "PlantGrossEfficiency", //PI AF ELEMENT
+                "div": "PlantGrossEfficiency", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Overall Plant Gross Efficiency",
+                "theme": "light",
+                "type":"gauge",//type of chart
+                "path":"path={0}|color&path={0}|StartValue&path={0}|endValue"            
+            },
+             {
+                "afname": "PlantGrossHeatRate", //PI AF ELEMENT
+                "div": "PlantGrossHeatRate", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "Overall Plant Gross Heatrate",
+                "theme": "light",
+                "type":"gauge",//type of chart
+                "path":"path={0}|color&path={0}|StartValue&path={0}|endValue"            
+            }
+        
+];
+/****Plant Performance****/

@@ -36,8 +36,11 @@
 .mydata{
     padding: 20px 25px 20px 25px;
 }
-#overallPlantGeneration,#overallAuxGeneration,#overallPlantGrossEfficiency,#overallPlantGrossHeatRate,#mwFFTGeneration,#mwFFTAuxConsumption,#GrossFFTEfficiency,#fftPlantGrossHeatRate,
-#mwTWHGeneration,#mwTWHAuxConsumption,#GrossTWHEfficiency,#twhPlantGrossHeatRate{
+#overallPlantGeneration,#overallAuxGeneration,#overallPlantGrossEfficiency,#overallPlantGrossHeatRate,#mwFFTGeneration,#mwFFTAuxConsumption,
+#GrossFFTEfficiency,#fftPlantGrossHeatRate,#mwTWHGeneration,#mwTWHAuxConsumption,#GrossTWHEfficiency,#twhPlantGrossHeatRate,#PlantGenerationOverallPlant,
+#AuxConsumptionOverallPlant,#PlantGrossEfficiencyOverallPlant,#PlantGrossHeatRateOverallPlant,#PlantGeneration540MW,#AuxConsumption540MW,
+#PlantGrossEfficiency540MW,#PlantGrossHeatRate540MW,#PlantGeneration1200MW,#AuxConsumption1200MW,#PlantGrossEfficiency1200MW,#PlantGrossHeatRate1200MW
+{
   width: 100%;
   height: 250px;
 }
