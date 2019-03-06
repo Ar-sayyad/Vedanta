@@ -2,13 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class piCoresight extends CI_Controller {
-
     public function __construct() {
         parent::__construct();
         $this->load->database(); 
        // $this->load->library('excel');
         $this->load->library('session');
-	$this->load->library('form_validation');
+        $this->load->library('form_validation');
         $this->load->model('balco_model');
         $this->balco_model->is_logged_in();
         $this->load->helper('file');
@@ -18,13 +17,11 @@ class piCoresight extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
         
-       public function index()
-	{
+       public function index(){
             $data['title'] = "PI Coresight";
-             $data['titlebar'] = "PI Coresight";
+            $data['titlebar'] = "PI Coresight";
             $data['icons'] = "bubble_chart";
             $this->load->view('balco/piCoresight',$data);
-	}     
-        
+        }            
      
 }

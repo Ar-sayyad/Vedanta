@@ -20,7 +20,7 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-                <?php include('includes/performanceUnitChartDiv.php');?>                            
+                <?php include('includes/unitPerformance.php');?>                            
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->

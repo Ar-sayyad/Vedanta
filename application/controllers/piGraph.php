@@ -8,7 +8,7 @@ class piGraph extends CI_Controller {
         $this->load->database(); 
        // $this->load->library('excel');
         $this->load->library('session');
-	$this->load->library('form_validation');
+        $this->load->library('form_validation');
         $this->load->model('balco_model');
         $this->balco_model->is_logged_in(); 
         $this->load->helper('file');
@@ -18,17 +18,15 @@ class piGraph extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
         
-       public function index()
-	{
+       public function index(){
             $data['title'] = "PI <i class='fa fa-angle-double-right'></i> Graph";
             $data['titlebar'] = "PI >> Graph";
             $data['icons'] = "bubble_chart";
             $this->load->view('balco/piGraph',$data);
-	}
+        }
         
         public function getPlotData(){
             $curl = curl_init();
-
             curl_setopt_array($curl, array(
               CURLOPT_URL => "https://devdata.osisoft.com/piwebapi/streams/F1AbEIRAQC7zjPUOfBqai218IAwifUOTEAv5xGAzgANOhDHzg4VRBlNqet1wMQswtjrtN2AUElTUlYxXEZPUkVDQVNUU1xDREYxNDR8UkFXREFUQQ/plot",
               CURLOPT_RETURNTRANSFER => true,

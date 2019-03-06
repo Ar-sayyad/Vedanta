@@ -34,10 +34,8 @@
     <!-- All Jquery -->
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
-
 <!-- Chart code -->
 <script src="<?php echo base_url();?>piadmin/js/overallPerformance.js" type="text/javascript"></script>
 <!-- Chart code -->
-
 </body>
 </html>

@@ -45,7 +45,7 @@ class kpis extends CI_Controller {
             $data['title'] = "KPIs <i class='fa fa-angle-double-right'></i> COP";
             $data['titlebar'] = "KPIs >> COP";
             $data['icons'] = "bubble_chart";
-             $data['path'] = "COP";
+            $data['path'] = "COP";
             $this->load->view('balco/kpisData',$data);
         }
        

@@ -20,7 +20,7 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-                <?php include('includes/chartDiv.php');?>                    
+                <?php include('includes/kpischartDiv.php');?>                    
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->

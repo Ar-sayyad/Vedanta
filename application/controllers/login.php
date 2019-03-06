@@ -7,7 +7,7 @@ class login extends CI_Controller {
         parent::__construct();
         $this->load->database(); 
         $this->load->library('session');
-	$this->load->library('form_validation');
+        $this->load->library('form_validation');
         $this->load->model('balco_model');
         $this->load->helper('file');
         $this->load->helper(array('form', 'url'));
@@ -16,13 +16,12 @@ class login extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
         
-       public function index()
-	{
+       public function index(){
             $data['title'] = "Login";
             $data['titlebar'] = "Login";
             $data['icons'] = "bubble_chart";
             $this->load->view('balco/login',$data);
-	}     
+        }     
         
       
 }
