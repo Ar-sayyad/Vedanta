@@ -617,7 +617,7 @@ var dashboardKpis = [
                 "div": "plf", // DIV NAME WHERE TO DISPLAY CHART
                 "title": "PLF in (%)",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP", //PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color", //PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -646,7 +646,7 @@ var dashboardKpis = [
                 "div": "paf",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "PAF in (%)",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -671,11 +671,11 @@ var dashboardKpis = [
                     }]
             }, 
             {
-                "afname": "GrossGenration",//PI AF ELEMENT
+                "afname": "GrossGeneration",//PI AF ELEMENT
                 "div": "grossgeneration",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "Gross Generation",
                 "theme": "none",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -704,7 +704,7 @@ var dashboardKpis = [
                 "div": "auxconsumption",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "Aux Consumption",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -733,7 +733,7 @@ var dashboardKpis = [
                 "div": "netgeneration",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "Net Generation",
                 "theme": "none",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -758,11 +758,11 @@ var dashboardKpis = [
                     }]
             }, 
             {
-                "afname": "SCC@3600",//PI AF ELEMENT
-                "div": "scc@360",// DIV NAME WHERE TO DISPLAY CHART
+                "afname": "SCC@360",//PI AF ELEMENT
+                "div": "scc360",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "SCC",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -791,7 +791,7 @@ var dashboardKpis = [
                 "div": "heatrate",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "Heat Rate",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -820,7 +820,7 @@ var dashboardKpis = [
                 "div": "soc",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "SOC",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -849,7 +849,7 @@ var dashboardKpis = [
                 "div": "oilconsumption",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "Oil Consumption",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -878,7 +878,7 @@ var dashboardKpis = [
                 "div": "gcv",// DIV NAME WHERE TO DISPLAY CHART
                 "title": "GCV",
                 "theme": "light",
-                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "path":"path={0}|value&path={0}|color",//PI Attributes Path for Query
                 "graph": [{
                         "balloonText": "BP<br>[[value]]",
                         "fillAlphas": 0.8,
@@ -901,6 +901,23 @@ var dashboardKpis = [
                         "valueField": "act",
                         "fixedColumnWidth": 14
                     }]
+            }
+    ];
+    
+    var mtdytd=[
+            {
+                "afname": "MTD", //PI AF ELEMENT
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT", //PI Attributes Path for Query
+                "balloonText": "<b>[[value]]</b>" 
+            },
+            {
+                "afname": "YTD", //PI AF ELEMENT
+                "theme": "light",
+                "type":"serial",//type of chart
+                "path":"path={0}|BP&path={0}|ACT", //PI Attributes Path for Query
+                "balloonText": "<b>[[value]]</b>" 
             }
     ];
 /****DASHBOARD KPIS****/
