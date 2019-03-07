@@ -609,3 +609,298 @@ var plantPerformance = [
         
 ];
 /****Plant Performance****/
+
+/****DASHBOARD KPIS****/
+var dashboardKpis = [
+            {
+                "afname": "PLF", //PI AF ELEMENT
+                "div": "plf", // DIV NAME WHERE TO DISPLAY CHART
+                "title": "PLF in (%)",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP", //PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color":"skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                        },
+                      {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color":"orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                        }]
+            },
+            {
+                "afname": "PAF", //PI AF ELEMENT
+                "div": "paf",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "PAF in (%)",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "GrossGenration",//PI AF ELEMENT
+                "div": "grossgeneration",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "Gross Generation",
+                "theme": "none",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "AuxConsumption",//PI AF ELEMENT
+                "div": "auxconsumption",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "Aux Consumption",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "NetGeneration",//PI AF ELEMENT
+                "div": "netgeneration",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "Net Generation",
+                "theme": "none",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "SCC@3600",//PI AF ELEMENT
+                "div": "scc@360",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "SCC",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+             },
+            {
+                "afname": "HeatRate",//PI AF ELEMENT
+                "div": "heatrate",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "Heat Rate",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "SOC",//PI AF ELEMENT
+                "div": "soc",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "SOC",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "OilConsumption",//PI AF ELEMENT
+                "div": "oilconsumption",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "Oil Consumption",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }, 
+            {
+                "afname": "GCV",//PI AF ELEMENT
+                "div": "gcv",// DIV NAME WHERE TO DISPLAY CHART
+                "title": "GCV",
+                "theme": "light",
+                "path":"path={0}|value&path={0}|color&path={0}|ACT&path={0}|BP",//PI Attributes Path for Query
+                "graph": [{
+                        "balloonText": "BP<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 0.2,
+                        "title": "BP",
+                        "type": "column",
+                        "color": "skyblue",
+                        "valueField": "bp",
+                        "fixedColumnWidth": 14
+                    },
+                    {
+                        "balloonText": "ACT<br>[[value]]",
+                        "fillAlphas": 0.8,
+                        "id": "AmGraph-2",
+                        "lineAlpha": 0.2,
+                        "title": "ACT",
+                        "type": "column",
+                        "color": "orange",
+                        "valueField": "act",
+                        "fixedColumnWidth": 14
+                    }]
+            }
+    ];
+/****DASHBOARD KPIS****/
