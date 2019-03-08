@@ -1143,14 +1143,6 @@ var chart = AmCharts.makeChart("actVsBp2MTD", {
             "categoryBalloonEnabled":false
 
           },  
-//            "legend": {
-//              "useGraphSettings": true,
-//              "position": "bottom",
-//              "bulletType": "round",
-//              "equalWidths": false,
-//              "valueWidth": 50,
-//              //"color": "#FFFFFF"
-//            },
 	"titles": [],
 	"dataProvider": [
 		{
