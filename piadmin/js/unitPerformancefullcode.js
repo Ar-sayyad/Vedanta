@@ -109,7 +109,7 @@
                     "title": performanceUnits[key].title
                 }],
                 "plotAreaFillAlphas": 0.1,
-                "depth3D": 30,
+                "depth3D": 3,
                 "angle": 10,
                 "allLabels": [],
                 "balloon": {
@@ -159,7 +159,7 @@
                 pullOutRadius: 60,
                 "outlineColor": "",
                 "innerRadius": "45%",
-                "depth3D": 0,
+                "depth3D": 5,
                 "balloonText": performanceUnits[key].balloonText,
                 "angle": 0,
                 "export": {

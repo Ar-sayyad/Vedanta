@@ -90,7 +90,7 @@ $.each(kpisOverallPlant, function(key) {
    "theme": kpisOverallPlant[key].theme,
    "categoryField": "mw",
    "startEffect": "elastic",
-   "startDuration": 1,
+   "startDuration": 0,
    "categoryAxis": {
     "gridPosition": "start",
     "position": "left",
@@ -109,7 +109,7 @@ $.each(kpisOverallPlant, function(key) {
     "title": ''
    }],
    "plotAreaFillAlphas": 0.1,
-   "depth3D": 0,
+   "depth3D": 3,
    "angle": 10,
    "allLabels": [],
    "balloon": {

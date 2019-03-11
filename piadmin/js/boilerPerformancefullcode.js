@@ -87,7 +87,7 @@ $.each(boilerPerformance, function(key) {
                 "labelRadius": 10,
                 pullOutRadius: 60,
                 "outlineColor": "",
-                "depth3D": 0,
+                "depth3D": 5,
                 "balloonText": boilerPerformance[key].balloonText,
                 "angle": 0,
                 "export": {
@@ -181,7 +181,7 @@ $.each(allBoilerEfficiency, function(key) {
             "theme": allBoilerEfficiency[key].theme,
             "categoryField": "mw",
             "startEffect": "elastic",
-            "startDuration": 1,
+            "startDuration": 0,
             "categoryAxis": {
                 "gridPosition": "start",
                 "position": "left",
@@ -200,7 +200,7 @@ $.each(allBoilerEfficiency, function(key) {
                 "title": allBoilerEfficiency[key].title
             }],
             "plotAreaFillAlphas": 0.1,
-            "depth3D": 0,
+            "depth3D": 3,
             "angle": 10,
             "allLabels": [],
             "balloon": {
@@ -261,7 +261,7 @@ $.each(allBoilerEfficiency, function(key) {
                 "labelRadius": 10,
                 pullOutRadius: 60,
                 "outlineColor": "",
-                "depth3D": 0,
+                "depth3D": 3,
                 "balloonText": allBoilerEfficiency[key].balloonText,
                 "angle": 0,
                 "export": {

@@ -127,9 +127,9 @@ $.each(elementPerformance, function(key1) {
                  "arrows": [{
                   "alpha": 1,
                   "innerRadius": "10%",
-                  "nailRadius": 0,
+                  "nailRadius": 10,
                   "color": "#cccc00",
-                  "radius": "180%",
+                  "radius": "160%",
                   "value":marker
                  }]
                 });

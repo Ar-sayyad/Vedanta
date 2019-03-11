@@ -98,7 +98,7 @@ $.each(turbinePerformance, function(key) {
                                 "title": turbinePerformance[key].title
                         }],
                         "plotAreaFillAlphas": 0.1,
-                        "depth3D": 0,
+                        "depth3D": 3,
                         "angle": 0,
                         "allLabels": [],
                         "balloon": {
@@ -147,7 +147,7 @@ $.each(turbinePerformance, function(key) {
                 "labelRadius": 10,
                 pullOutRadius: 60,
                 "outlineColor": "",
-                "depth3D": 0,
+                "depth3D":5,
                 "balloonText": turbinePerformance[key].balloonText,
                 "angle": 0,
                 "export": {

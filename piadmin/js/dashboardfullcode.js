@@ -78,7 +78,7 @@ $.each(monthlyReceipt, function (key) {
 			"theme": monthlyReceipt[key].theme,
 			"categoryField": "mw",
 			"startEffect": "elastic",
-			"startDuration": 1,
+			"startDuration": 0,
 			"categoryAxis": {
 				"gridPosition": "start",
 				"position": "left",
@@ -95,7 +95,7 @@ $.each(monthlyReceipt, function (key) {
 				"title": ''
 			}],
 			"plotAreaFillAlphas": 0.1,
-			"depth3D": 0,
+			"depth3D": 3,
 			"angle": 10,
 			"allLabels": [],
 			"balloon": {
@@ -206,7 +206,7 @@ $.each(dashboardKpis, function (key) {
 		AmCharts.makeChart(dashboardKpis[key].div + "Month", {
 			"theme": "light",
 			"type": "serial",
-			"startDuration": 1,
+			"startDuration": 0,
 			"dataProvider": cols,
 			"valueAxes": [{
 				"position": "bottom",
@@ -220,7 +220,7 @@ $.each(dashboardKpis, function (key) {
 				"valueField": "value",
 				"fixedColumnWidth": 12
 			}],
-			"depth3D": 0,
+			"depth3D": 2,
 			"angle": 10,
 			"balloon": {
 				"cornerRadius": 0,
@@ -334,8 +334,8 @@ $.each(dashboardKpis, function (key) {
 				"theme": mtdytd[key1].theme,
 				"categoryField": "mw",
 				"rotate": true,
-				"startEffect": "elastic",
-				"startDuration": 1,
+				"startEffect": "none",
+				"startDuration": 0,
 				"categoryAxis": {
 					"gridPosition": "start",
 					"position": "left",
@@ -353,7 +353,7 @@ $.each(dashboardKpis, function (key) {
 					"fixedColumnWidth": 10
 				}],
 				"plotAreaFillAlphas": 0.1,
-				"depth3D": 0,
+				"depth3D": 2,
 				"angle": 0,
 				"allLabels": [],
 				"balloon": {
