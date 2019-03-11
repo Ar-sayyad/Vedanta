@@ -1,4 +1,5 @@
 $.each(monthlyReceipt, function (key) {
+        $('#'+monthlyReceipt[key].div).html("<img style='margin-top:25%;margin-left:40%;width:75px;height:75px;' src='piadmin/images/loading.gif'>");
 	var rankingElements = [];
 	var batch = {
 		"database": {
@@ -132,6 +133,7 @@ $.each(monthlyReceipt, function (key) {
 });
 
 $.each(dashboardKpis, function (key) {
+        $('#'+dashboardKpis[key].div + "Month").html("<img style='margin-top:50px;width:60px;height:60px;'  src='piadmin/images/loading.gif'>");
 	var rankingElements = [];
 	var batch = {
 		"database": {
@@ -251,6 +253,7 @@ $.each(dashboardKpis, function (key) {
 	});
 
 	$.each(mtdytd, function (key1) {
+                  $('#'+dashboardKpis[key].div + mtdytd[key1].afname).html("<img style='margin-top:50px;width:60px;height:60px;' src='piadmin/images/loady.gif'>");
 		var rankingElements = [];
 		var batch2 = {
 			"database": {
