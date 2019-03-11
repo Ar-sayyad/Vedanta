@@ -109,7 +109,7 @@
                     "title": performanceUnits[key].title
                 }],
                 "plotAreaFillAlphas": 0.1,
-                "depth3D": 0,
+                "depth3D": 30,
                 "angle": 10,
                 "allLabels": [],
                 "balloon": {
