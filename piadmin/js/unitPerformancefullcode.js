@@ -1,4 +1,5 @@
         $.each(performanceUnits, function(key) {
+                $('#'+performanceUnits[key].div).html("<img style='margin-top:20%;margin-left:40%;width:75px;height:75px;' src='../piadmin/images/loading.gif'>");
     var rankingElements = [];
     var batch = {
         "database": {

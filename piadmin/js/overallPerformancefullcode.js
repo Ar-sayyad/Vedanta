@@ -1,5 +1,6 @@
 $.each(elementPerformance, function(key1) {
         $.each(plantPerformance, function(key) {
+                $('#'+plantPerformance[key].div+elementPerformance[key1].afname).html("<img style='margin-top:20%;margin-left:40%;width:75px;height:75px;' src='../piadmin/images/loading.gif'>");
       var rankingElements = [];
     var batch = {
         "database": {

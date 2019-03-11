@@ -1,4 +1,5 @@
 $.each(boilerPerformance, function(key) {
+        $('#'+boilerPerformance[key].div).html("<img style='margin-top:20%;margin-left:40%;width:75px;height:75px;' src='../piadmin/images/loading.gif'>");
     var rankingElements = [];
     var batch = {
         "database": {
@@ -100,6 +101,7 @@ $.each(boilerPerformance, function(key) {
 }); ///json array    
 
 $.each(allBoilerEfficiency, function(key) {
+        $('#'+allBoilerEfficiency[key].div).html("<img style='margin-top:20%;margin-left:40%;width:75px;height:75px;' src='../piadmin/images/loading.gif'>");
     var rankingElements = [];
     var batch = {
         "database": {

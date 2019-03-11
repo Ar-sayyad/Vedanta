@@ -4,6 +4,7 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Dashboard</li>
+                        <li><a href="<?php echo base_url();?>"><i class="fa fa-home"></i> Home </a></li>
                         <li>
                             <a class="has-arrow" href="#" aria-expanded="false">
                                 <i class="fa fa-arrows"></i>
@@ -250,66 +251,6 @@
                                           <!--<li><a href="<?php echo base_url();?>piGraph"><i class="fa fa-file-excel-o"></i> Demo Graph</a></li>-->
                                      </ul>
                                </li>   
-                       
-                               
-<!--                        <li class="nav-label">Pi Coresight</li>
-                        <li>
-                            <a class="has-arrow" href="<?php echo base_url();?>" aria-expanded="false">
-                                <i class="fa fa-bar-chart"></i>
-                                <span class="hide-menu">Pi Coresight
-                                    <span class="label label-rouded label-primary pull-right">1</span>                                        
-                                </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url();?>piCoresight">Pi Coresight</a></li>
-                                
-                            </ul>
-                        </li>-->
-                       
-<!--                        
-                          <li class="nav-label">Energy Distribution</li>
-                          <li>
-                            <a class="has-arrow" href="<?php echo base_url();?>" aria-expanded="false">
-                                <i class="fa fa-flash"></i>
-                                <span class="hide-menu">Energy 
-                                    <span class="label label-rouded label-primary pull-right">2</span>                                        
-                                </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url();?>energyDistribution540">540 MW</a></li>
-                                <li><a href="<?php echo base_url();?>energyDistribution1200">1200 MW</a></li>
-                            </ul>
-                        </li>
-                          
-                        <li class="nav-label">Boiler Performance</li>
-                          <li>
-                            <a class="has-arrow" href="<?php echo base_url();?>" aria-expanded="false">
-                                <i class="fa fa-fire"></i>
-                                <span class="hide-menu">Boiler 
-                                    <span class="label label-rouded label-primary pull-right">2</span>                                        
-                                </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url();?>bolierPerformace540">540 MW</a></li>
-                                <li><a href="<?php echo base_url();?>bolierPerformace1200">1200 MW</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li class="nav-label">Turbine Performance</li>
-                          <li>
-                            <a class="has-arrow" href="<?php echo base_url();?>" aria-expanded="false">
-                                <i class="fa fa-superpowers"></i>
-                                <span class="hide-menu">Turbine 
-                                    <span class="label label-rouded label-primary pull-right">2</span>                                        
-                                </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url();?>turbinePerformace540">540 MW</a></li>
-                                <li><a href="<?php echo base_url();?>turbinePerformace1200">1200 MW</a></li>
-                            </ul>
-                        </li>-->
-                        
-                         
                        
                     </ul>
                 </nav>

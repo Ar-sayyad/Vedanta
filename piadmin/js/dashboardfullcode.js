@@ -253,7 +253,7 @@ $.each(dashboardKpis, function (key) {
 	});
 
 	$.each(mtdytd, function (key1) {
-                  $('#'+dashboardKpis[key].div + mtdytd[key1].afname).html("<img style='margin-top:50px;width:60px;height:60px;' src='piadmin/images/loady.gif'>");
+                  $('#'+dashboardKpis[key].div + mtdytd[key1].afname).html("<img style='margin-top:50px;width:60px;height:60px;' src='piadmin/images/loading.gif'>");
 		var rankingElements = [];
 		var batch2 = {
 			"database": {
