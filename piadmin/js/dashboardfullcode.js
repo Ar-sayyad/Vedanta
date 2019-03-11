@@ -203,6 +203,12 @@ $.each(dashboardKpis, function (key) {
 				"color": rankingElements[key1][2].color
 			});
 		});
+//                   var allMonths = [{month:'Jan'},{month:'Feb'},{month:'Mar'}, {month:'Apr'},{month:'May'},{month:'Jun'},{month:'Jul'},{month:'Aug'},{month:'Sep'},{month:'Oct'},{month:'Nov'},{month:'Dec'}];
+//var mn = cols.sort(function(a,b){
+//    return allMonths.indexOf(a.month) - allMonths.indexOf(b.month);
+//});
+//console.log(mn);
+
 		AmCharts.makeChart(dashboardKpis[key].div + "Month", {
 			"theme": "light",
 			"type": "serial",
