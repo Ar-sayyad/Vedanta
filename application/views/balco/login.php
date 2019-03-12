@@ -26,7 +26,7 @@ body, html {
     box-shadow: 0px 0px 3px #e7e7e7;
 }
 .login-form {
-        background: rgba(169, 169, 169, 0.2);
+        background: #f8f9fa91;
     padding: 0px 20px 0px;
     border-radius: 0px;
 }
@@ -40,9 +40,7 @@ body, html {
     font-family: 'Verdana', sans-serif;
     background-color: rgb(239, 239, 239);
 }
-#btns{
-     /*display:none;*/
-}
+
 </style>
 
 <body>
@@ -54,27 +52,7 @@ body, html {
         <div class="unix-login">
             <div class="container-fluid">
                 <div class="row justify-content-right">
-                    <div class="col-lg-8">
-                        <!--<div id="btns">
-                        <button type="button" name="save" id="default" title="Default" class="btn btn-default btn-sm">
-                            <img width="50px" height="30px"  src="<?php echo base_url();?>piadmin/images/bg/balco.jpg">
-                        </button>
-                        <button type="button" name="save" id="bg1" title="Theme 1" class="btn btn-default btn-sm">
-                            <img width="50px" height="30px"  src="<?php echo base_url();?>piadmin/images/bg/bg1.jpg">
-                        </button>
-                          <button type="button" name="save" id="theme1" title="Theme 2" class="btn btn-default btn-sm">
-                            <img width="50px" height="30px"  src="<?php echo base_url();?>piadmin/images/bg/img1.jpg">
-                        </button>
-                         <button type="button" name="save" id="theme2" title="Theme 3" class="btn btn-default btn-sm">
-                            <img width="50px" height="30px"  src="<?php echo base_url();?>piadmin/images/bg/b.jpg">
-                        </button>
-                         <button type="button" name="save" id="theme3" title="Theme 4" class="btn btn-default btn-sm">
-                            <img width="50px" height="30px"  src="<?php echo base_url();?>piadmin/images/bg/b1.jpg">
-                        </button>
-                         <button type="button" name="save" id="theme4" title="Theme 5" class="btn btn-default btn-sm">
-                             <img width="50px" height="30px" src="<?php echo base_url();?>piadmin/images/bg/b2.jpg">
-                        </button>
-                        </div>-->
+                    <div class="col-lg-8">                       
                     </div>
                     <div class="col-lg-3">
                         <div class="login-content card">

@@ -143,7 +143,7 @@
    <?php include('includes/footer-min.php');?>
    <!-- Styles -->
    <!-- Chart code -->   
-   <script src="<?php echo base_url();?>piadmin/js/dashboardfullcode.js" type="text/javascript"></script>
+   <script src="<?php echo base_url();?>piadmin/js/dashboard.js" type="text/javascript"></script>
    <!-- Chart code -->
 </body>
 </html>
