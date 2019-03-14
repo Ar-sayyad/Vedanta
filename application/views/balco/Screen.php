@@ -30,10 +30,9 @@
                             <div class="card-body">
                               
                                <div id="mydiv">
-                                        <img src="<?php echo base_url().$path;?>" width="100%"> 
+                                        <!--<img src="<?php echo base_url().$path;?>" width="100%">--> 
                                         <!--screen path here in iframe-->
-         <!--     <iframe id="frame" src="http://10.81.100.250:8088/ReportServer_DWH/Pages/ReportViewer.aspx?%2fReport%2fMarketingECRM&rs:Command=Render" width="100%">
-     </iframe>-->
+                                        <iframe id="frame" src="<?php echo $path;?>" width="100%"></iframe>
                                 </div>
                                 <!--<button id="button">Load</button>-->                               
                             </div>

@@ -40,7 +40,7 @@ class screens extends CI_Controller {
                 $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Boiler";
                 $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Boiler";
                 $data['icons'] = "bubble_chart";            
-                $data['path'] = "piadmin/images/screens/Boiler.bmp";
+                $data['path'] = "https://10.101.71.181:4440/PIVision/#/Displays/25/Boiler-Overview?asset=%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CSteam%20Turbine;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%5CFlue%20Gas%20System;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%5CFW%20Circuit;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%5CSteam%20Circuit%5CReheater%20System;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%5CSteam%20Circuit%5CSuperheater%20System;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%5CAPHs%5CAPH-A;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%5CAPHs%5CAPH-B;%5C%5CBLDB%5CBALCOPOWER%5CVEDANTA%5CBALCO%5CCPP%20-%20540MW%5CUnit%202%5CBoiler%0D%0A";
                 $this->load->view('balco/Screen',$data);          
         }
         
@@ -212,7 +212,7 @@ class screens extends CI_Controller {
                 $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 1200 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Boiler";
                 $data['titlebar'] = "Plant Screen >> 1200 MW > Unit #1 > Boiler";
                 $data['icons'] = "bubble_chart";            
-                $data['path'] = "piadmin/images/screens/Overview.bmp";
+                $data['path'] = "https://10.101.71.181:4440/PIVision/#/Displays/34/Boiler-Overview";
                 $this->load->view('balco/Screen',$data);         
         }
         
@@ -220,7 +220,7 @@ class screens extends CI_Controller {
                 $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Turbine";
                 $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Turbine";
                 $data['icons'] = "bubble_chart";            
-                $data['path'] = "piadmin/images/screens/Overview.bmp";
+                $data['path'] = "https://10.101.71.181:4440/PIVision/#/Displays/7/Steam_Turbine-Overview";
                 $this->load->view('balco/Screen',$data);           
         }
         
@@ -228,7 +228,7 @@ class screens extends CI_Controller {
                 $data['title'] = "Plant Screen <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1 <i class='fa fa-angle-right'></i> Condenser";
                 $data['titlebar'] = "Plant Screen >> 540 MW > Unit #1 > Condenser";
                 $data['icons'] = "bubble_chart";            
-                $data['path'] = "piadmin/images/screens/Overview.bmp";
+                $data['path'] = "https://10.101.71.181:4440/PIVision/#/Displays/28/Condenser-1";
                 $this->load->view('balco/Screen',$data);            
         }
         
