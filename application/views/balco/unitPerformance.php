@@ -34,7 +34,6 @@
     <!-- All Jquery -->
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
-
 <!-- Chart code -->
 <script>
          var elementName = "<?php echo $path;?>";

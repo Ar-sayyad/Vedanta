@@ -32,7 +32,7 @@
     </div>
     <!-- End Wrapper -->
     <!-- All Jquery -->
-    <?php include('includes/footer-min.php');?>
+<?php include('includes/footer-min.php');?>
      <!-- Styles -->
 <script src="<?php echo base_url();?>piadmin/js/lib/chart-amchart/lightnew.js"></script>
 <!-- Chart code -->

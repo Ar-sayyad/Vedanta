@@ -20,28 +20,18 @@
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-
                 <div class="row">                   
                     <div class="col-lg-12">
                         <div class="card">
-<!--                            <div class="card-title center">
-                                <h4>PI CORESIGHT</h4>
-                            </div>-->
-                            <div class="card-body">
-                              
+                            <div class="card-body">                              
                                <div id="mydiv">
-                                        <!--<img src="<?php echo base_url().$path;?>" width="100%">--> 
-                                        <!--screen path here in iframe-->
-                                        <iframe id="frame" src="<?php echo $path;?>" width="100%"></iframe>
+                                    <iframe id="frame" src="<?php echo $path;?>" width="100%"></iframe>
                                 </div>
                                 <!--<button id="button">Load</button>-->                               
                             </div>
                         </div>
-                    </div>
-                  
-                </div>              
-               
-                
+                    </div>                  
+                </div> 
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->
@@ -56,14 +46,5 @@
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
  <script>
- $(document).ready(function(){
-$("#button").click(function () { 
-    $url= "http://59.144.10.120/Coresight/PB/#/PBDisplays/396";
-    alert($url);
-   
-    $("#frame").attr("src", $url);
-});
-});
-</script>
 </body>
 </html>
