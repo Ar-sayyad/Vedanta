@@ -126,7 +126,7 @@ $.each(turbinePerformance, function (key) {
 
 			});
 		} else {
-			var chart = AmCharts.makeChart(turbinePerformance[key].div, {
+			 AmCharts.makeChart(turbinePerformance[key].div, {
 				"type": turbinePerformance[key].type,
 				"theme": turbinePerformance[key].theme,
 				"titles": [],
