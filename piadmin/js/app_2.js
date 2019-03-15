@@ -1,8 +1,8 @@
-var baseServiceUrl="https://10.101.71.181:4440/piwebapi/";
-var user="cmdc";
-var pass="system@01";
-var afServerName="BLDB";
-var afDatabaseName="BALCOPOWER\\VEDANTA\\BALCO\\WebPortal";
+var baseServiceUrl="https://192.168.1.28:1706/piwebapi/";
+var user="Asif";
+var pass="ECG@123";
+var afServerName="ECG-DEV-SERVER";
+var afDatabaseName="BALCOPOWER";
 var enableBasicAuth=!0;
 var processJsonContent=function(url, type, data) {
     return $.ajax( {
