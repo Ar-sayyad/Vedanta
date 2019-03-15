@@ -92,7 +92,6 @@ $.each(turbinePerformance, function(key) {
                                 "id": "ValueAxis-1",
                                 "position": "bottom",
                                 "axisAlpha": 1,
-                                "minimum": 40,
                                 "titleFontSize": 14,
                                 "fontSize": 11,
                                 "title": turbinePerformance[key].title
