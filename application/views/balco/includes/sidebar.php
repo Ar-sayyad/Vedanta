@@ -85,60 +85,68 @@
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/onefft" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #1
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/onefftBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/onefftTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/onefftCondenser"><i class="fa fa-television"></i> Condenser</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/onefftHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/onefftPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/onefftAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>                                         
+                                         <li><a href="<?php echo base_url();?>screens/onefftHeater"><i class="fa fa-television"></i> HP Heaters</a></li>                                         
+                                         <li><a href="<?php echo base_url();?>screens/onefftLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/onefftPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/twofft" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #2
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/twofftBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/twofftTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/twofftCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/twofftAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/twofftHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/twofftPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/twofftLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/twofftPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
                                  <li>
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/threefft" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #3
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/threefftBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/threefftTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/threefftCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/threefftAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/threefftHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/threefftPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/threefftLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/threefftPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/fourfft" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #4
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/fourfftBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/fourfftTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/fourfftCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/fourfftAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/fourfftHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/fourfftPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/fourfftLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/fourfftPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
 
@@ -156,60 +164,68 @@
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/onetwh" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #1
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/onetwhBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/onetwhTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/onetwhCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/onetwhAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/onetwhHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/onetwhPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/onetwhLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/onetwhPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/twotwh" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #2
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/twotwhBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/twotwhTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/twotwhCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/twotwhAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/twotwhHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/twotwhPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/twotwhLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/twotwhPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/threetwh" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #3
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/threetwhBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/threetwhTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/threetwhCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/threetwhAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/threetwhHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/threetwhPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/threetwhLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/threetwhPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a class="has-arrow" href="<?php echo base_url();?>screens/fourtwh" aria-expanded="false">
                                          <i class="fa fa-plus-circle"></i>
                                          <span class="hide-menu">Unit #4
-                                             <span class="label label-rouded label-primary pull-right">5</span>                                        
+                                             <span class="label label-rouded label-primary pull-right">7</span>                                        
                                          </span>
                                      </a>
                                     <ul aria-expanded="false" class="collapse">
                                          <li><a href="<?php echo base_url();?>screens/fourtwhBoiler"><i class="fa fa-television"></i> Boiler</a></li>
                                          <li><a href="<?php echo base_url();?>screens/fourtwhTurbine"><i class="fa fa-television"></i> Turbine</a></li>
                                          <li><a href="<?php echo base_url();?>screens/fourtwhCondenser"><i class="fa fa-television"></i> Condenser</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/fourtwhAirpreHeater"><i class="fa fa-television"></i> Air Preheaters</a></li>
                                          <li><a href="<?php echo base_url();?>screens/fourtwhHeater"><i class="fa fa-television"></i> HP Heaters</a></li>
-                                         <li><a href="<?php echo base_url();?>screens/fourtwhPerformance"><i class="fa fa-television"></i> Performance</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/fourtwhLPHeater"><i class="fa fa-television"></i> LP Heaters</a></li>
+                                         <li><a href="<?php echo base_url();?>screens/fourtwhPerformance"><i class="fa fa-television"></i> BFP's</a></li>
                                     </ul>
                                 </li>
 

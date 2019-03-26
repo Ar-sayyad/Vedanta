@@ -25,12 +25,15 @@
                         <div class="card">
                             <div class="card-body">                              
                                <div id="mydiv">
-                                    <iframe id="frame" src="<?php echo $path;?>" width="100%"></iframe>
+                                    <iframe id="frame" src="<?php echo $path;?>" width="100%" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                                 </div>
+                                    <button style="float:right;" id="fullscreen" class="btn btn-info button"><i class="fa fa-expand"></i></button>
                                 <!--<button id="button">Load</button>-->                               
                             </div>
                         </div>
-                    </div>                  
+                            
+                    </div>   
+                        
                 </div> 
                 <!-- End PAge Content -->
             </div>
