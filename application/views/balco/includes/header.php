@@ -25,10 +25,10 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
-<!--                                <li><a href="#"><i class="ti-user"></i> Profile</a></li>
+                                    <li><a href="/profile"><i class="ti-user"></i> Profile</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
-                                    <li role="separator" class="divider"></li>-->
+                                    <li><a href="/setting"><i class="ti-settings"></i> Setting</a></li>
+                                    <li role="separator" class="divider"></li>
                                     <li><a href="<?php echo base_url();?>Balco/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
                             </div>

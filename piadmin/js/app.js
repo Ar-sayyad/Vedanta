@@ -3,11 +3,11 @@
 //var pass="system@01";
 //var afServerName="BLDB";
 //var afDatabaseName="BALCOPOWER\\VEDANTA\\BALCO\\WebPortal";
-var baseServiceUrl = "https://192.168.1.28:1706/piwebapi/";
+var baseServiceUrl = "https://192.168.1.28:1706/piwebapi/";//https://114.143.109.122:1706/piwebapi/
 var user = "Asif";
 var pass = "ECG@123";
 var afServerName = "ECG-DEV-SERVER";
-var afDatabaseName = "Vedanta\\VEDANTA\\BALCO\\WebPortal"; //BALCOPOWER
+var afDatabaseName = "BALCOPOWER";//"Vedanta\\VEDANTA\\BALCO\\WebPortal"; //
 var enableBasicAuth = !0;
 var processJsonContent = function (url, type, data) {
 	return $.ajax({
@@ -643,7 +643,7 @@ var plantPerformance = [{
 		"title": "Overall Plant Generation",
 		"theme": "light",
 		"type": "gauge",
-		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue"
+		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue&path={0}|Realtime_MW"
 	}
 
 	,
@@ -653,7 +653,7 @@ var plantPerformance = [{
 		"title": "Overall Aux Generation",
 		"theme": "light",
 		"type": "gauge",
-		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue"
+		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue&path={0}|Realtime_MW"
 	}
 
 	,
@@ -663,7 +663,7 @@ var plantPerformance = [{
 		"title": "Overall Plant Gross Efficiency",
 		"theme": "light",
 		"type": "gauge",
-		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue"
+		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue&path={0}|Realtime_MW"
 	}
 
 	,
@@ -673,7 +673,7 @@ var plantPerformance = [{
 		"title": "Overall Plant Gross Heatrate",
 		"theme": "light",
 		"type": "gauge",
-		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue"
+		"path": "path={0}|color&path={0}|StartValue&path={0}|endValue&path={0}|Realtime_MW"
 	}
 
 ];

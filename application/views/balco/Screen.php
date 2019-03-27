@@ -30,10 +30,8 @@
                                     <button style="float:right;" id="fullscreen" class="btn btn-info button"><i class="fa fa-expand"></i></button>
                                 <!--<button id="button">Load</button>-->                               
                             </div>
-                        </div>
-                            
-                    </div>   
-                        
+                        </div>                            
+                    </div>                        
                 </div> 
                 <!-- End PAge Content -->
             </div>
@@ -48,6 +46,6 @@
     <!-- All Jquery -->
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
- <script>
+<script src="<?php echo base_url();?>piadmin/js/frame.js" type="text/javascript"></script>
 </body>
 </html>

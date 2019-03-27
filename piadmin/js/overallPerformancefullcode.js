@@ -73,9 +73,9 @@ $.each(elementPerformance, function (key1) {
 					});
 					valuesID++;
 				});
-				rankingElements[elementID] = elementItems;
+				rankingElements[elementID] = elementItems;                                         
 			});
-			var marker = rankingElements[2][2].StartValue;
+			var marker = rankingElements[1][4].Realtime_MW;
 			var StartValue = rankingElements[0][2].StartValue;
 			var endval = rankingElements[0][3].endValue;
 			var valueInterval = Math.round(rankingElements[0][3].endValue / 4);
