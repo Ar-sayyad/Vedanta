@@ -3,10 +3,10 @@
 //var pass="system@01";
 //var afServerName="BLDB";
 //var afDatabaseName="BALCOPOWER\\VEDANTA\\BALCO\\WebPortal";
-var baseServiceUrl = "https://192.168.1.192:1706/piwebapi/";//https://114.143.109.122:1706/piwebapi/
-var user = "Ashif";
-var pass = "Ecgit@123";
-var afServerName = "ASHIF-DMGLBQI";
+var baseServiceUrl = "https://192.168.1.192:1706/piwebapi/";//https://192.168.1.178:1706/piwebapi/
+var user = "Ashif";//"ECGDEVSERVER\Administrator";//"Ashif";
+var pass = "Ecgit@123";//"@dmin@2019";//"Ecgit@123";
+var afServerName = "ASHIF-DMGLBQI";//"ECGDEVSERVER";
 var afDatabaseName = "BALCOPOWER\\VEDANTA\\BALCO\\WebPortal"; //
 var enableBasicAuth = !0;
 var processJsonContent = function (url, type, data) {
