@@ -18,34 +18,34 @@ class reports extends CI_Controller {
     }
     
         public function index(){
-                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Overall Plant";
-                $data['titlebar'] = "Reports >> Overall Plant";
+                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Daily Perf Reports";
+                $data['titlebar'] = "Reports >> Daily Perf Reports";
                 $data['icons'] = "bubble_chart";
-                $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+                $data['path'] = "http://bldb/ReportServer_SSRS/Pages/ReportViewer.aspx?%2fBalco_Power_Report%2fPerformanceReport&rs:Embed=true";
                 $this->load->view('balco/Report',$data); 		
           }
         
-        public function overallPlant(){
-                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Overall Plant";
-                $data['titlebar'] = "Reports >> Overall Plant";
+        public function daily(){
+                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Daily Perf Reports";
+                $data['titlebar'] = "Reports >> Daily Perf Reports";
                 $data['icons'] = "bubble_chart";
-                $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+                $data['path'] = "http://bldb/ReportServer_SSRS/Pages/ReportViewer.aspx?%2fBalco_Power_Report%2fPerformanceReport&rs:Embed=true";
                 $this->load->view('balco/Report',$data); 
           }
         
         /********540 MW *******/
         
-         public function unitonefft(){
-                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #1";
-                $data['titlebar'] = "Reports >> 540 MW > Unit #1";
+         public function realtimePerf(){
+                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Real-Time Perf Reports";
+                $data['titlebar'] = "Reports >> Real-Time Perf Reports";
                 $data['icons'] = "bubble_chart";
-                $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
+                $data['path'] = "http://bldb/ReportServer_SSRS/Pages/ReportViewer.aspx?%2fBalco_Power_Report%2fPerformanceReportSnapshot&rs:Embed=true";
                 $this->load->view('balco/Report',$data); 
           }     
        
-         public function unittwofft(){
-                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> 540 MW <i class='fa fa-angle-right'></i> Unit #2";
-                $data['titlebar'] = "Reports >> 540 MW > Unit #2";
+         public function DailyGeneration(){
+                $data['title'] = "Reports <i class='fa fa-angle-double-right'></i> Daily Generation Reports";
+                $data['titlebar'] = "Reports >> Daily Generation Reports";
                 $data['icons'] = "bubble_chart";
                 $data['path'] = "piadmin/images/reports/overallPlantPerformance.png";
                 $this->load->view('balco/Report',$data); 

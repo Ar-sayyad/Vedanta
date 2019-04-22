@@ -76,8 +76,4 @@ class Balco extends CI_Controller
         $this->load->view('balco/sweetalerts', $data);
         
     }
-    
-    public function setting(){
-            
-    }
 }

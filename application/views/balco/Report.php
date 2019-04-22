@@ -24,11 +24,9 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">                                
-                               <div id="mydiv">
-                                   <h2>IMAGE (Sample Overall Plant Report)</h2>
-                                   <img src="<?php echo base_url().$path;?>" width="100%"> 
-<!--                                    <iframe id="frame" src="http://10.81.100.250:8088/ReportServer_DWH/Pages/ReportViewer.aspx?%2fReport%2fMarketingECRM&rs:Command=Render" width="100%">
-                                    </iframe>-->
+                               <div id="mydiv">                                  
+                                    <iframe id="frame" src="<?php echo $path;?>" width="100%">
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
@@ -47,15 +45,5 @@
     <!-- All Jquery -->
     <?php include('includes/footer-min.php');?>
      <!-- Styles -->
- <script>
- $(document).ready(function(){
-$("#button").click(function () { 
-    $url= "http://59.144.10.120/Coresight/PB/#/PBDisplays/396";
-    alert($url);
-   
-    $("#frame").attr("src", $url);
-});
-});
-</script>
 </body>
 </html>

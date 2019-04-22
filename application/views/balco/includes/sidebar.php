@@ -232,38 +232,9 @@
                              </ul>
                        </li>  
                 <li class="nav-label">Reports</li>
-                 <li><a href="<?php echo base_url();?>reports/overallPlant"> <i class="fa fa-file-pdf-o"></i> Overall Plant</a></li>
-                        <li>
-                           <a class="has-arrow" href="#" aria-expanded="false">
-                                <i class="fa fa-arrows"></i>
-                                <span class="hide-menu">540 MW
-                                    <span class="label label-rouded label-primary pull-right">5</span>                                        
-                                </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url();?>reports/unitonefft"><i class="fa fa-file-excel-o"></i> Unit #1</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/unittwofft"><i class="fa fa-file-excel-o"></i> Unit #2</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/unitthreefft"><i class="fa fa-file-excel-o"></i> Unit #3</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/unitfourfft"><i class="fa fa-file-excel-o"></i> Unit #4</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/performancefft"><i class="fa fa-file-excel-o"></i> Performance</a></li>
-                             </ul>
-                       </li>
-                        <li>
-                           <a class="has-arrow" href="#" aria-expanded="false">
-                                <i class="fa fa-arrows"></i>
-                                <span class="hide-menu">1200 MW
-                                    <span class="label label-rouded label-primary pull-right">5</span>                                        
-                                </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse">
-                                 <li><a href="<?php echo base_url();?>reports/unitonetwh"><i class="fa fa-file-excel-o"></i> Unit #1</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/unittwotwh"><i class="fa fa-file-excel-o"></i> Unit #2</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/unitthreetwh"><i class="fa fa-file-excel-o"></i> Unit #3</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/unitfourtwh"><i class="fa fa-file-excel-o"></i> Unit #4</a></li>
-                                 <li><a href="<?php echo base_url();?>reports/performancetwh"><i class="fa fa-file-excel-o"></i> Performance</a></li>
-                                  <!--<li><a href="<?php echo base_url();?>piGraph"><i class="fa fa-file-excel-o"></i> Demo Graph</a></li>-->
-                             </ul>
-                       </li>   
+					<li><a href="<?php echo base_url();?>reports/daily"> <i class="fa fa-file-pdf-o"></i> Daily Perf Reports</a></li>
+					<li><a href="<?php echo base_url();?>reports/realtimePerf"> <i class="fa fa-file-pdf-o"></i> Real-Time Perf Reports</a></li>
+					<li><a href="<?php echo base_url();?>reports/DailyGeneration"> <i class="fa fa-file-pdf-o"></i> Daily Generation Reports</a></li> 
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
