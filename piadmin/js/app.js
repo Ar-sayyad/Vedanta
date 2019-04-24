@@ -50,7 +50,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -61,7 +61,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -82,7 +82,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -93,7 +93,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -114,7 +114,7 @@ var kpisOverallPlant = [{
 			"type": "column",
 			"color": "skyblue",
 			"valueField": "Trips",
-			"fixedColumnWidth": 14
+			"fixedColumnWidth": 18
 		}]
 	}
 
@@ -134,7 +134,7 @@ var kpisOverallPlant = [{
 			"type": "column",
 			"color": "skyblue",
 			"valueField": "TubeLeaks",
-			"fixedColumnWidth": 14
+			"fixedColumnWidth": 18
 		}]
 	}
 
@@ -154,7 +154,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -165,7 +165,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -186,7 +186,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -197,7 +197,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -218,7 +218,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -229,7 +229,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -250,7 +250,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -261,7 +261,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -282,7 +282,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -293,7 +293,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -314,7 +314,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -325,7 +325,7 @@ var kpisOverallPlant = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -523,7 +523,7 @@ var allBoilerEfficiency = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "hl",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 20
 			},
 			{
 				"balloonText": "IO<br>[[value]]",
@@ -534,7 +534,7 @@ var allBoilerEfficiency = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "io",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 20
 			}
 		]
 	}
@@ -800,7 +800,7 @@ var monthlyReceipt = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -811,7 +811,7 @@ var monthlyReceipt = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -832,7 +832,7 @@ var monthlyReceipt = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -843,7 +843,7 @@ var monthlyReceipt = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}
@@ -864,7 +864,7 @@ var monthlyReceipt = [{
 				"type": "column",
 				"color": "skyblue",
 				"valueField": "bp",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			},
 			{
 				"balloonText": "ACT<br>[[value]]",
@@ -875,7 +875,7 @@ var monthlyReceipt = [{
 				"type": "column",
 				"color": "orange",
 				"valueField": "act",
-				"fixedColumnWidth": 14
+				"fixedColumnWidth": 18
 			}
 		]
 	}

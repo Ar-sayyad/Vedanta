@@ -1,6 +1,6 @@
   <div class="row">
         <div class="col-lg-12">
-           <div class="card" style="padding: 10px;min-height: 650px;">
+           <div class="card" style="padding: 5px;min-height: 650px;">
               <div class="table-responsive">
                  <table id="example3" class="table table-striped  table-bordered" cellspacing="0" width="100%">
                     <thead>

@@ -95,8 +95,8 @@ $.each(monthlyReceipt, function (key) {
 				"title": ''
 			}],
 			"plotAreaFillAlphas": 0.1,
-			"depth3D": 3,
-			"angle": 10,
+			"depth3D": 0,
+			"angle": 0,
 			"allLabels": [],
 			"balloon": {
 				"drop": !0,
@@ -222,12 +222,12 @@ $.each(dashboardKpis, function (key) {
 				"lineAlpha": 0.2,
 				"type": "column",
 				"valueField": "value",
-				"fixedColumnWidth": 12
+				"fixedColumnWidth": 18
 			}],
-			"depth3D": 2,
-			"angle": 10,
+			"depth3D":0,
+			"angle": 0,
 			"balloon": {
-				"cornerRadius": 0,
+				"cornerRadius": 5,
 				"adjustBorderColor": false,
 				"color": "#ffffff",
 				"fixedPosition": true,
@@ -354,10 +354,10 @@ $.each(dashboardKpis, function (key) {
 					"type": "column",
 					"fillColorsField": "color",
 					"valueField": "val",
-					"fixedColumnWidth": 10
+					"fixedColumnWidth": 18
 				}],
 				"plotAreaFillAlphas": 0.1,
-				"depth3D": 2,
+				"depth3D": 0,
 				"angle": 0,
 				"allLabels": [],
 				"balloon": {

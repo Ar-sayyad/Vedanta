@@ -76,10 +76,10 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
+	'username' => 'root',//sa
 	'password' => '',// 'auto@777',
 	'database' => 'balcopower_db',// 'PIMS_DB',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysqli',//sqlsrvr
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

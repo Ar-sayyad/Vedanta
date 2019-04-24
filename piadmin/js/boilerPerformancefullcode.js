@@ -84,7 +84,7 @@ $.each(boilerPerformance, function (key) {
 			"startDuration": 0,
 			"labelsEnabled": false,
 			"labelRadius": 10,
-			pullOutRadius: 60,
+			pullOutRadius: 50,
 			"outlineColor": "",
 			"depth3D": 5,
 			"balloonText": boilerPerformance[key].balloonText,
@@ -240,7 +240,7 @@ $.each(allBoilerEfficiency, function (key) {
 					val: rankingElements[key1][1].value
 				});
 			});
-			var chart = AmCharts.makeChart(allBoilerEfficiency[key].div, {
+			AmCharts.makeChart(allBoilerEfficiency[key].div, {
 				"type": allBoilerEfficiency[key].type,
 				"theme": allBoilerEfficiency[key].theme,
 				"titles": [],
@@ -258,7 +258,7 @@ $.each(allBoilerEfficiency, function (key) {
 				"startDuration": 0,
 				"labelsEnabled": false,
 				"labelRadius": 10,
-				pullOutRadius: 60,
+				pullOutRadius: 50,
 				"outlineColor": "",
 				"depth3D": 3,
 				"balloonText": allBoilerEfficiency[key].balloonText,

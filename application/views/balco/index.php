@@ -28,7 +28,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> X,XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 2,25,650</h2>
                            <p class="m-b-0">Coal Cost (Rs/kWh)</p>
                         </div>
                      </div>
@@ -41,7 +41,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 25,986</h2>
                            <p class="m-b-0">Coal Cost (Rs/kWh)</p>
                         </div>
                      </div>
@@ -54,7 +54,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 58,589</h2>
                            <p class="m-b-0">Import Grid Cost (Rs/kWh)</p>
                         </div>
                      </div>
@@ -67,7 +67,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> X,XX,XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 2,24,45,000</h2>
                            <p class="m-b-0">Total Cost (Rs/kWh)</p>
                         </div>
                      </div>
@@ -82,7 +82,7 @@
                            <span><i class="ti-server f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="ti-server"></i> XXX</h2>
+                           <h2 class="color-white"><i class="ti-server"></i> 584</h2>
                            <p class="m-b-0">Coal Stock (MT)</p>
                         </div>
                      </div>
@@ -95,7 +95,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> X,XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 3,77,560</h2>
                            <p class="m-b-0">Power Smelter Cost (Rs/Ton)</p>
                         </div>
                      </div>
@@ -108,7 +108,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> X,XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 5,55,852</h2>
                            <p class="m-b-0">Electricity Duty (Rs/kWh)</p>
                         </div>
                      </div>
@@ -121,7 +121,7 @@
                            <span><i class="fa fa-inr f-s-40"></i></span>
                         </div>
                         <div class="media-body media-text-right">
-                           <h2 class="color-white"><i class="fa fa-inr"></i> X,XX,XXX</h2>
+                           <h2 class="color-white"><i class="fa fa-inr"></i> 10,45,352</h2>
                            <p class="m-b-0">EBIDTA</p>
                         </div>
                      </div>
@@ -143,7 +143,7 @@
    <?php include('includes/footer-min.php');?>
    <!-- Styles -->
    <!-- Chart code -->   
-   <script src="<?php echo base_url();?>piadmin/js/dashboard.js" type="text/javascript"></script>
+   <script src="<?php echo base_url();?>piadmin/js/dashboardfullcode.js" type="text/javascript"></script>
    <!-- Chart code -->
 </body>
 </html>

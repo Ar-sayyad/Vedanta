@@ -109,7 +109,7 @@ $.each(kpisOverallPlant, function (key) {
 				"title": ''
 			}],
 			"plotAreaFillAlphas": 0.1,
-			"depth3D": 3,
+			"depth3D": 0,
 			"angle": 10,
 			"allLabels": [],
 			"balloon": {
